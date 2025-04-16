@@ -10,22 +10,28 @@ include(dirname(__FILE__) . '/inc/head.php');
 
 <body id="pageTop">
   <!-- ______main______________//header____________________ -->
-  <main id="mainWrap" class="active">
+  <!-- ____________________content____________________ -->
+  <main>
     <section>
-      <!-- ____________________content____________________ -->
-      <div class="com-content">
-        
-      </div>
-
+      <ul>
+        <li>
+          <a href="<?php echo h($path) ?>/effect1.php">
+            エフェクト1
+          </a>
+        </li>
+        <li>
+          <a href="<?php echo h($path) ?>/effect2.php">
+            エフェクト2
+          </a>
+        </li>
+        <li>
+          <a href="<?php echo h($path) ?>/effect3.php">
+            エフェクト3
+          </a>
+        </li>
+      </ul>
     </section>
-    <!-- ____________________//content__________________ -->
   </main>
-
-
-
-  <!-- ____________________// footer -->
-  <!-- ____________________script____________________ -->
-  <!-- __________________//script____________________ -->
 </body>
 
 </html>

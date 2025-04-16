@@ -1,25 +1,40 @@
 @use "../global" as *;
 
 // ______________________________________
-#pageTop {
+#pageEffect3 {
   $img_path: "top";
 
-  main {}
-
-  section {
-    max-width: 1040px;
-    margin: 0 auto;
-    padding: 0 20px;
-    li {
-      margin-bottom: 10px;
-      a {
-      }
-    }
+  main {
+    margin: 0;
   }
 
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
 
+  .hover-div,
+  .loading-div {
+    position: relative;
 
+    img {
+      display: none;
+    }
 
+    .initialImg {
+      opacity: 0;
+      display: block;
+    }
+
+    canvas {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+
+  }
 
 
   // ______________________________________

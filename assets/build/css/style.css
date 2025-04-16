@@ -881,3 +881,79 @@ figure.m_scale.m_scale_on img {
   -webkit-transform: scale(1);
           transform: scale(1);
 }
+
+#pageTop section {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+#pageTop section li {
+  margin-bottom: 10px;
+}
+#pageEffect1 main {
+  margin: 0;
+}
+#pageEffect2 main {
+  margin: 0;
+}
+#pageEffect2 .fog_wrap {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+#pageEffect2 .js_fog {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  overflow: hidden;
+}
+#pageEffect2 .js_fog canvas {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
+#pageEffect2 .js_fog img {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom center;
+     object-position: bottom center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+#pageEffect3 main {
+  margin: 0;
+}
+#pageEffect3 .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+}
+#pageEffect3 .hover-div,
+#pageEffect3 .loading-div {
+  position: relative;
+}
+#pageEffect3 .hover-div img,
+#pageEffect3 .loading-div img {
+  display: none;
+}
+#pageEffect3 .hover-div .initialImg,
+#pageEffect3 .loading-div .initialImg {
+  opacity: 0;
+  display: block;
+}
+#pageEffect3 .hover-div canvas,
+#pageEffect3 .loading-div canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}

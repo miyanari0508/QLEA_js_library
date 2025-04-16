@@ -1,26 +1,14 @@
 @use "../global" as *;
 
 // ______________________________________
-#pageTop {
+#pageEffect1 {
   $img_path: "top";
 
-  main {}
-
-  section {
-    max-width: 1040px;
-    margin: 0 auto;
-    padding: 0 20px;
-    li {
-      margin-bottom: 10px;
-      a {
-      }
-    }
+  main {
+    margin: 0;
   }
 
-
-
-
-
+  
 
   // ______________________________________
   // ______________________________________
