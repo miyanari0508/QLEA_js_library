@@ -29,6 +29,11 @@ include(dirname(__FILE__) . '/inc/head.php');
             エフェクト3
           </a>
         </li>
+        <li>
+          <a href="<?php echo h($path) ?>/effect4.php">
+            エフェクト4
+          </a>
+        </li>
       </ul>
     </section>
   </main>

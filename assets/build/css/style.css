@@ -586,6 +586,16 @@ main {
     right: 8rem;
   }
 }
+.com-pickup_body ::-webkit-scrollbar {
+  width: 4px;
+}
+.com-pickup_body ::-webkit-scrollbar-track {
+  background: transparent;
+}
+.com-pickup_body ::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
 .com-pickup_body {
   height: 0;
   position: absolute;
@@ -597,16 +607,6 @@ main {
           transform: translate(-50%);
   overflow: hidden;
   padding: 0;
-}
-.com-pickup_body ::-webkit-scrollbar {
-  width: 4px;
-}
-.com-pickup_body ::-webkit-scrollbar-track {
-  background: transparent;
-}
-.com-pickup_body ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 4px;
 }
 @media screen and (max-width: 750px) {
   .com-pickup_body {
@@ -951,6 +951,64 @@ figure.m_scale.m_scale_on img {
 }
 #pageEffect3 .hover-div canvas,
 #pageEffect3 .loading-div canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+#pageEffect4 main {
+  margin: 0;
+}
+#pageEffect4 .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+  grid-template-columns: repeat(1, 1fr);
+}
+#pageEffect4 .img-box {
+  overflow: hidden;
+}
+#pageEffect4 .img-box:hover .loading-div {
+  -webkit-transition-duration: 4000ms;
+          transition-duration: 4000ms;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+#pageEffect4 .loading-div {
+  position: relative;
+  -webkit-transition: all 400ms cubic-bezier(0.36, 0.1, 0.16, 1);
+  transition: all 400ms cubic-bezier(0.36, 0.1, 0.16, 1);
+  -webkit-transition-duration: 1200ms;
+          transition-duration: 1200ms;
+}
+#pageEffect4 .loading-div.act-scroll::after {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+#pageEffect4 .loading-div::after {
+  -webkit-transition: all 400ms cubic-bezier(0.36, 0.1, 0.16, 1);
+  transition: all 400ms cubic-bezier(0.36, 0.1, 0.16, 1);
+  -webkit-transition-duration: 2800ms;
+          transition-duration: 2800ms;
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 300%;
+  height: 100%;
+  background: linear-gradient(125deg, rgba(255, 255, 255, 0) 10%, rgba(255, 255, 255, 0.96) 55%, rgb(255, 255, 255) 100%);
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+#pageEffect4 .loading-div img {
+  display: none;
+}
+#pageEffect4 .loading-div .initialImg {
+  opacity: 0;
+  display: block;
+}
+#pageEffect4 .loading-div canvas {
   position: absolute;
   width: 100%;
   height: 100%;
