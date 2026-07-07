@@ -170,7 +170,7 @@ class FogEffect {
 
     if (p_anime === "start") {
       this.play();
-      this.smokeShader.uniforms._speed.value = 0.05;
+      this.smokeShader.uniforms._speed.value = 0.1;
       this.smokeShader.uniforms._range1.value = 0.4;
       this.smokeShader.uniforms._range2.value = 3.0;
       this.smokeShader.uniforms._range3.value = 0.0;

@@ -1,0 +1,106 @@
+@use "../global" as *;
+
+// ______________________________________
+#pageEffect5 {
+
+background: #000;
+height: 100vh;
+overflow: hidden;
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+#sapphire {
+  position: relative;
+  width: 250px;
+  height: 500px;
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  .cut {
+    mix-blend-mode: color-dodge;
+    position: absolute;
+    @for $i from 1 through 100 {
+      &:nth-child(#{$i}) {
+        width: random(500) + 400px;
+        height: random(500) + 600px;
+        clip-path: polygon(
+          random(100) + 0% random(100) + 0%,
+          random(100) + 0% random(100) + 0%,
+          random(100) + 0% random(100) + 0%
+        );
+        animation: sapphireBlue random(4000) + 2000ms random(10000) * -1ms ease-in-out infinite alternate;
+        background: linear-gradient(
+          random(360) + 0deg,
+          rgba(random(255), random(255), random(255), 0.1) 0%,
+          rgba(random(255), random(255), random(255), 0.2) 8%,
+          rgba(random(255), random(255), random(255), 0.4) 16%,
+          rgba(random(255), random(255), random(255), 0.7) 25%,
+          rgba(random(255), random(255), random(255), 0.4) 34%,
+          rgba(random(255), random(255), random(255), 0.2) 42%,
+          rgba(random(255), random(255), random(255), 0.1) 50%
+        );
+        background-size: 100% 200%;
+      }
+    }
+  }
+}
+
+@keyframes sapphireBlue {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+
+
+  // ______________________________________
+  // ______________________________________
+  // ______________________________________
+
+  // ______________________________________
+  @include mq() {}
+
+  // ______________________________________
+  // ______________________________________
+  // ______________________________________
+
+  // ______________________________________
+  @include mq() {}
+
+  // ______________________________________
+  // ______________________________________
+  // ______________________________________
+
+  // ______________________________________
+  @include mq() {}
+
+  // ______________________________________
+  // ______________________________________
+  // ______________________________________
+
+  // ______________________________________
+  @include mq() {}
+
+  // ______________________________________
+  // ______________________________________
+  // ______________________________________
+
+  // ______________________________________
+  @include mq() {}
+
+  // ______________________________________
+  // ______________________________________
+  // ______________________________________
+
+  // ______________________________________
+  @include mq() {}
+
+  // ______________________________________
+  // pageTop ___end
+}
