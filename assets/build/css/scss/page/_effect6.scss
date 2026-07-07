@@ -1,0 +1,88 @@
+@use "../global" as *;
+
+// ______________________________________
+#pageEffect6 {
+    .product {
+        &-list {
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        &-item {
+            position: relative;
+            z-index: 0;
+            display: block;
+            padding: 8rem 3rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: hidden;
+            cursor: pointer;
+            border: 1px solid #605f5f89;
+            border-left: 0px;
+
+            &:first-child {
+                border-left: 1px solid #605f5f89;
+            }
+
+
+            &:hover {
+                &::before {
+                    opacity: 1;
+                }
+                
+                &::after {
+                    animation: ripple .8s ease-out forwards;
+                    scale: 1;
+                }
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                z-index: -2;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(106.04deg, #f7fbff33, #c4d4e733 100.14%);
+                opacity: 0;
+                transition-duration: .2s;
+                transition-timing-function: ease;
+                transition-property: opacity;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                z-index: -1;
+                top: 50%;
+                left: 50%;
+                translate: -50% -50%;
+                background: url("../img/ripple.png") 50% 50% / contain no-repeat;
+                width: 100%;
+                aspect-ratio: 1;
+                mix-blend-mode: multiply;
+                scale: 0;
+            }
+
+            @keyframes ripple {
+              0% {
+                opacity: 0.5;
+                transform: scale(1);
+              }
+            
+              100% {
+                opacity: 0;
+                transform: scale(3);
+              }
+            }
+        }
+
+        &-img {
+            width: 19.2rem;
+            height: 19.2rem;
+        }
+    }
+}
