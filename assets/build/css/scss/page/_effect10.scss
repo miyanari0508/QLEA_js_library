@@ -1,0 +1,147 @@
+@use "../global" as *;
+
+#pageEffect10 {
+  main {
+    margin: 0;
+  }
+
+  .slider {
+    position: relative;
+    width: 100%;
+    cursor: none;
+    margin: 5rem 0;
+
+    .track {
+      display: flex;
+      gap: 2rem;
+      width: max-content;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      transition: transform .6s cubic-bezier(.66, 0, .2, 1);
+      will-change: transform;
+
+      &.no-anim,
+      &.no-anim .slide {
+        transition: none !important;
+      }
+    }
+
+    .slide {
+      position: relative;
+      flex: 0 0 auto;
+      width: 30rem;
+      filter: brightness(.45) saturate(.85);
+      transition: width .6s cubic-bezier(.66, 0, .2, 1), filter .6s cubic-bezier(.66, 0, .2, 1);
+
+      &.is-active {
+        width: 62rem; 
+        filter: none;
+
+        .slide-bg {
+          height: auto;
+        }
+
+        .slide-content {
+            opacity: 1;
+        }
+      }
+
+      &-bg {
+        position: relative;
+        height: 46rem;
+        border-radius: 18px;
+        overflow: hidden;
+        transition: height .6s cubic-bezier(.66, 0, .2, 1);
+  
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; 
+        }
+      }
+
+      &-content {
+        position: relative;
+        z-index: 2;
+        opacity: 0;
+  
+        h3 {
+          margin-top: 4px;
+          font-size: 30px;
+          font-weight: 700;
+        }
+  
+        p {
+          margin-top: 8px;
+          font-size: 13px;
+        }
+      }
+    }
+
+    .cursor-btn {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 20;
+      display: grid;
+      place-items: center;
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+      background: #0d0d10;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: .02em;
+      pointer-events: none;     
+      opacity: 0;
+      scale: .6;
+      transition: opacity .2s, scale .2s;
+
+      &.show {
+        opacity: 1;
+        scale: 1;
+      }
+    }
+
+    .nav-btn {
+      display: none;
+    }
+
+    @media (max-width: 1024px) {
+      cursor: auto;
+
+      .cursor-btn {
+        display: none;
+      }
+
+      .nav-btn {
+        position: absolute;
+        top: 20rem;
+        z-index: 20;
+        display: grid;
+        place-items: center;
+        width: 5rem;
+        height: 5rem;
+        border: none;
+        border-radius: 50%;
+        background: #0d0d10;
+        color: #fff;
+        font-size: 2.8rem;
+        padding-bottom: 1rem;
+        line-height: 1;
+        cursor: pointer;
+        transition: opacity .3s ease;
+
+        &:hover {
+          opacity: 0.7;
+        }
+
+        &.nav-prev { left: 16px; }
+        &.nav-next { right: 16px; }
+      }
+    }
+  }
+}

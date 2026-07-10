@@ -1,0 +1,306 @@
+@use "../global" as *;
+
+#pageEffect11 {
+  .pickup {
+    position: relative;
+
+    &-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      margin-bottom: 32px;
+      width: min(92%, 1200px);
+      margin-inline: auto;
+    }
+
+    &-ttl {
+      font-size: 5rem;
+      font-weight: 700;
+      line-height: 1;
+
+      @media (max-width: 1024px) {
+        margin: 0 auto;
+        font-size: 7rem;
+      }
+    }
+
+    &-control {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      width: fit-content;
+      position: absolute;
+      right: calc((100% - min(92%, 1200px)) / 2); 
+      top: 0;
+
+      @media (max-width: 1024px) {
+        margin: 5rem auto 0;
+        position: relative;
+        gap: 8rem;
+      }
+    }
+
+    &-nav {
+      width: 40px;
+      height: 40px;
+      display: grid;
+      place-items: center;
+      position: relative;
+      overflow: hidden;
+      border: 0;
+      background: transparent;
+      cursor: pointer;
+      color: #333;
+      transition: opacity .25s cubic-bezier(0.3, 0.015, 0.12, 1);
+
+      &-inner {
+        position: absolute;
+        inset: 0;
+        display: grid;
+        place-items: center;  
+      }
+    
+      .pickup-arrow {
+        grid-area: 1 / 1;      
+        width: 24px;       
+        height: 24px;
+        transition: translate .4s cubic-bezier(0.3, 0.015, 0.12, 1);
+    
+        path {
+          fill: none;
+          stroke: currentColor;
+          stroke-width: 2;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+        }
+      }
+
+      @media (max-width: 1024px) {
+        width: 60px;
+        height: 60px;
+
+        .pickup-arrow {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+
+    .js-next {
+      .pickup-arrow--clone { 
+        translate: -200% 0; 
+      }
+    
+      &:hover {
+        .pickup-arrow:not(.pickup-arrow--clone) {
+          animation: arrow-out-right .4s cubic-bezier(0.3, 0.015, 0.12, 1) forwards;
+        }
+        .pickup-arrow--clone {
+          animation: arrow-in-from-left .4s cubic-bezier(0.3, 0.015, 0.12, 1) forwards;
+        }
+      }
+    }
+    
+    .js-prev {
+      .pickup-arrow--clone { 
+        translate: 200% 0; 
+      }
+    
+      &:hover {
+        .pickup-arrow:not(.pickup-arrow--clone) {
+          animation: arrow-out-left .4s cubic-bezier(0.3, 0.015, 0.12, 1) forwards;
+        }
+        .pickup-arrow--clone {
+          animation: arrow-in-from-right .4s cubic-bezier(0.3, 0.015, 0.12, 1) forwards;
+        }
+      }
+    }
+
+    @keyframes arrow-out-right {
+      from { translate: 0 0; }
+      to   { translate: 200% 0; }
+    }
+    @keyframes arrow-in-from-left {
+      from { translate: -200% 0; }
+      to   { translate: 0 0; }
+    }
+    @keyframes arrow-out-left {
+      from { translate: 0 0; }
+      to   { translate: -200% 0; }
+    }
+    @keyframes arrow-in-from-right {
+      from { translate: 200% 0; }
+      to   { translate: 0 0; }
+    }
+
+    &-dots {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+
+      @media (max-width: 1024px) {
+        gap: 4rem;
+      }
+    }
+
+    &-body { 
+      --eyecatch-h: 314px; 
+    }
+
+    .dot {
+      width: 3px;
+      height: 3px;
+      padding: 0;
+      border: 0;
+      border-radius: 999px;
+      background: rgba(0, 0, 0, .2);
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      transition: width .35s cubic-bezier(0.3, 0.015, 0.12, 1), background .35s cubic-bezier(0.3, 0.015, 0.12, 1);  
+
+      &.is-active {
+        width: 3.2rem;
+        background: rgba(0, 0, 0, .12);
+      }
+
+      &-bar {
+        position: absolute;
+        inset: 0;
+        background: #6194d3;
+        transform: scaleX(0);
+        transform-origin: left center;
+        border-radius: inherit;
+      }
+
+      @keyframes dotBarFill {
+        from { transform: scaleX(0); }
+        to   { transform: scaleX(1); }
+      }
+
+      @media (max-width: 1024px) {
+        width: 8px;
+        height: 8px;
+
+        &.is-active {
+          width: 7rem;
+        }
+      }
+    }    
+
+    .slide {
+      width: 30%;
+      margin-inline: 3%;
+
+      @media (max-width: 1024px) {
+        width: 90%;
+        margin-inline: 5%;
+      }
+
+      &.swiper-slide-next {
+        .slide-img:after {
+          mask-position: 90% 50%; 
+        }
+      } 
+
+      &.swiper-slide-prev {
+        .slide-img:after {
+          mask-position: 10% 50%; 
+        }
+      } 
+
+      &-link {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+        position: relative;
+
+        &:hover {
+          .slide-img::before {
+            scale: 1;
+            opacity: 1;
+            transition: opacity .25s cubic-bezier(0.3, 0.015, 0.12, 1), scale .3s cubic-bezier(0.3, 0.015, 0.12, 1);
+          }
+          .slide-ttl span {
+            background-size: 100% 1px;
+          }
+        }
+      }  
+
+      &-img {
+        position: relative;
+        overflow: hidden;
+        margin: 0;
+        aspect-ratio: 3 / 2;
+        border-radius: 8px;
+             
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+        }   
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          translate: -50% -50%;
+          width: 125%;
+          aspect-ratio: 1;
+          border-radius: 50%;
+          z-index: 1;
+          background-color: rgba(0, 23, 92, .2);
+          scale: 0;
+          opacity: 0;
+          transition: opacity .25s cubic-bezier(0.3, 0.015, 0.12, 1), scale 0s cubic-bezier(0.3, 0.015, 0.12, 1) .25s;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          inset: 0;
+          z-index: 1;
+          margin: auto;
+          background-color: rgba(0, 0, 0, .6);
+          mask-image: url("../img/effect11/mask.webp");
+          mask-size: 600% 500%;
+          mask-repeat: no-repeat;
+          mask-position: 50% 50%;
+          transition: -webkit-mask-position .5s cubic-bezier(0.3, 0.015, 0.12, 1);
+          transition: mask-position .5s cubic-bezier(0.3, 0.015, 0.12, 1);
+          transition: mask-position .5s cubic-bezier(0.3, 0.015, 0.12, 1), 
+          -webkit-mask-position .5s cubic-bezier(0.3, 0.015, 0.12, 1);
+          backface-visibility: hidden;
+        }
+      } 
+
+      &-ttl {
+        margin-top: 16px;
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 1.6;
+        text-align: center;
+
+        @media (max-width: 1024px) {
+          font-size: 3.6rem;
+        }
+    
+        span {
+          display: inline;                
+          background-image: linear-gradient(currentColor, currentColor);
+          background-repeat: no-repeat;
+          background-position: 0 100%;    
+          background-size: 0% 1px;
+          transition: background-size .35s cubic-bezier(0.3, 0.015, 0.12, 1);
+          -webkit-box-decoration-break: clone;
+          box-decoration-break: clone;   
+          padding-bottom: 1px;       
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+@use "../global" as *;
+#pageEffect9 {
+  #webgl {
+    position: fixed;
+    inset: 0;
+    z-index: 5;        
+    pointer-events: none;
+  }
+
+  .p-home-what {
+    &__images {
+      width: 130%;
+      display: flex;
+      gap: 4rem;
+      white-space: nowrap;
+      height: fit-content;
+      overflow-y: hidden;
+      overflow-x: visible;
+      margin-bottom: 60rem;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      position: relative;
+      left: -20%;  
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }  
+
+    &__image-cover {
+      display: flex;
+      gap: 4rem;
+      animation: whatLoopReverse 50s 0s linear infinite;
+      -webkit-animation: whatLoopReverse 50s 0s linear infinite;
+    }  
+
+    &__image {
+      width: 89rem;
+      height: 50rem;
+      border-radius: 1rem;
+      overflow: hidden;  
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }   
+
+  [data-image-item] img {
+    transition: filter 2s ease;
+  }
+
+  [data-image-item] img {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+  }
+
+  @keyframes whatLoop {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  @keyframes whatLoopReverse {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+}
