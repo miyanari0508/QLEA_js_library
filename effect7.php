@@ -144,6 +144,7 @@ include(dirname(__FILE__) . '/inc/head.php');
   </section>
 
   </main>
+<?php include(dirname(__FILE__) . '/inc/footer.php'); ?>
   
   <nav class="dots" id="dots"></nav>
 </body>

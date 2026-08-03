@@ -110,6 +110,7 @@ include(dirname(__FILE__) . '/inc/head.php');
             </section>
         </div>
     </main>
+<?php include(dirname(__FILE__) . '/inc/footer.php'); ?>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>

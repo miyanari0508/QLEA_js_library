@@ -39,5 +39,6 @@ include(dirname(__FILE__) . '/inc/head.php');
             </div>
         </section>
     </main>
+<?php include(dirname(__FILE__) . '/inc/footer.php'); ?>
 </body>
 </html>

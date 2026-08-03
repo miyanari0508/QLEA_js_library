@@ -75,6 +75,7 @@ include(dirname(__FILE__) . '/inc/head.php');
       <button class="nav-btn nav-next" id="navNext" type="button" aria-label="Next">&#8250;</button>
     </div>
   </main>
+<?php include(dirname(__FILE__) . '/inc/footer.php'); ?>
 </body>
 <script src="<?php echo h($path_js) ?>/effect10.js"></script>
 

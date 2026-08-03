@@ -6,14 +6,27 @@
 
   main {}
 
-  section {
+  .list_wrap {
     max-width: 1040px;
     margin: 0 auto;
     padding: 0 20px;
+    .ttl{
+      margin-bottom: 2rem;
+    }
     li {
       margin-bottom: 10px;
+      list-style: square;
+      margin-left: 2rem;
       a {
       }
+    }
+    .list_flex{
+      @include flex_b;
+      
+    }
+    .list_item{
+      width: 30%;
+      padding-bottom: 5rem;
     }
   }
 

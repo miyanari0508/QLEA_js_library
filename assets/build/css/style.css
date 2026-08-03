@@ -882,13 +882,56 @@ figure.m_scale.m_scale_on img {
           transform: scale(1);
 }
 
-#pageTop section {
+footer .link_wrap .top_button {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: #000;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 4rem;
+  text-align: center;
+  z-index: 999;
+}
+
+#pageTop .list_wrap {
   max-width: 1040px;
   margin: 0 auto;
   padding: 0 20px;
 }
-#pageTop section li {
+#pageTop .list_wrap .ttl {
+  margin-bottom: 2rem;
+}
+#pageTop .list_wrap li {
   margin-bottom: 10px;
+  list-style: square;
+  margin-left: 2rem;
+}
+#pageTop .list_wrap .list_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#pageTop .list_wrap .list_item {
+  width: 30%;
+  padding-bottom: 5rem;
 }
 #pageEffect1 main {
   margin: 0;
@@ -1050,904 +1093,903 @@ figure.m_scale.m_scale_on img {
   position: absolute;
 }
 #pageEffect5 #sapphire .cut:nth-child(1) {
-  width: 651px;
-  height: 904px;
-  clip-path: polygon(41% 15%, 48% 90%, 51% 1%);
-  -webkit-animation: sapphireBlue 5849ms -1506ms ease-in-out infinite alternate;
-          animation: sapphireBlue 5849ms -1506ms ease-in-out infinite alternate;
-  background: linear-gradient(136deg, rgba(66, 161, 226, 0.1) 0%, rgba(39, 130, 199, 0.2) 8%, rgba(201, 131, 217, 0.4) 16%, rgba(71, 70, 118, 0.7) 25%, rgba(184, 204, 138, 0.4) 34%, rgba(15, 234, 26, 0.2) 42%, rgba(27, 18, 130, 0.1) 50%);
+  width: 749px;
+  height: 768px;
+  clip-path: polygon(27% 76%, 85% 51%, 68% 65%);
+  -webkit-animation: sapphireBlue 3302ms -1478ms ease-in-out infinite alternate;
+          animation: sapphireBlue 3302ms -1478ms ease-in-out infinite alternate;
+  background: linear-gradient(343deg, rgba(121, 170, 43, 0.1) 0%, rgba(106, 87, 99, 0.2) 8%, rgba(111, 255, 5, 0.4) 16%, rgba(8, 66, 96, 0.7) 25%, rgba(47, 198, 64, 0.4) 34%, rgba(196, 206, 204, 0.2) 42%, rgba(98, 147, 192, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(2) {
-  width: 855px;
-  height: 651px;
-  clip-path: polygon(16% 65%, 45% 80%, 49% 62%);
-  -webkit-animation: sapphireBlue 2429ms -8912ms ease-in-out infinite alternate;
-          animation: sapphireBlue 2429ms -8912ms ease-in-out infinite alternate;
-  background: linear-gradient(106deg, rgba(225, 30, 78, 0.1) 0%, rgba(241, 2, 9, 0.2) 8%, rgba(5, 247, 210, 0.4) 16%, rgba(98, 41, 64, 0.7) 25%, rgba(36, 139, 151, 0.4) 34%, rgba(162, 1, 129, 0.2) 42%, rgba(124, 61, 38, 0.1) 50%);
+  width: 502px;
+  height: 1056px;
+  clip-path: polygon(32% 99%, 96% 48%, 75% 16%);
+  -webkit-animation: sapphireBlue 2070ms -5350ms ease-in-out infinite alternate;
+          animation: sapphireBlue 2070ms -5350ms ease-in-out infinite alternate;
+  background: linear-gradient(287deg, rgba(252, 189, 170, 0.1) 0%, rgba(27, 5, 88, 0.2) 8%, rgba(230, 36, 73, 0.4) 16%, rgba(162, 234, 59, 0.7) 25%, rgba(172, 165, 165, 0.4) 34%, rgba(29, 244, 171, 0.2) 42%, rgba(1, 140, 168, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(3) {
-  width: 501px;
-  height: 717px;
-  clip-path: polygon(66% 86%, 66% 7%, 76% 61%);
-  -webkit-animation: sapphireBlue 2623ms -4230ms ease-in-out infinite alternate;
-          animation: sapphireBlue 2623ms -4230ms ease-in-out infinite alternate;
-  background: linear-gradient(145deg, rgba(229, 11, 141, 0.1) 0%, rgba(36, 112, 210, 0.2) 8%, rgba(9, 2, 210, 0.4) 16%, rgba(88, 137, 157, 0.7) 25%, rgba(12, 72, 16, 0.4) 34%, rgba(136, 202, 194, 0.2) 42%, rgba(52, 24, 4, 0.1) 50%);
+  width: 643px;
+  height: 897px;
+  clip-path: polygon(43% 41%, 7% 6%, 1% 32%);
+  -webkit-animation: sapphireBlue 5671ms -5028ms ease-in-out infinite alternate;
+          animation: sapphireBlue 5671ms -5028ms ease-in-out infinite alternate;
+  background: linear-gradient(168deg, rgba(17, 24, 218, 0.1) 0%, rgba(106, 6, 10, 0.2) 8%, rgba(189, 218, 14, 0.4) 16%, rgba(251, 132, 9, 0.7) 25%, rgba(181, 160, 99, 0.4) 34%, rgba(10, 137, 169, 0.2) 42%, rgba(246, 165, 31, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(4) {
-  width: 632px;
-  height: 1043px;
-  clip-path: polygon(8% 91%, 31% 57%, 44% 4%);
-  -webkit-animation: sapphireBlue 4335ms -4091ms ease-in-out infinite alternate;
-          animation: sapphireBlue 4335ms -4091ms ease-in-out infinite alternate;
-  background: linear-gradient(94deg, rgba(233, 17, 241, 0.1) 0%, rgba(57, 132, 205, 0.2) 8%, rgba(217, 176, 36, 0.4) 16%, rgba(150, 147, 38, 0.7) 25%, rgba(42, 50, 175, 0.4) 34%, rgba(178, 55, 47, 0.2) 42%, rgba(110, 252, 15, 0.1) 50%);
+  width: 738px;
+  height: 843px;
+  clip-path: polygon(7% 61%, 57% 72%, 68% 8%);
+  -webkit-animation: sapphireBlue 4539ms -60ms ease-in-out infinite alternate;
+          animation: sapphireBlue 4539ms -60ms ease-in-out infinite alternate;
+  background: linear-gradient(280deg, rgba(42, 245, 194, 0.1) 0%, rgba(16, 162, 71, 0.2) 8%, rgba(174, 197, 128, 0.4) 16%, rgba(10, 120, 84, 0.7) 25%, rgba(60, 139, 42, 0.4) 34%, rgba(141, 218, 120, 0.2) 42%, rgba(54, 114, 233, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(5) {
-  width: 579px;
-  height: 955px;
-  clip-path: polygon(55% 16%, 87% 100%, 87% 85%);
-  -webkit-animation: sapphireBlue 5522ms -4400ms ease-in-out infinite alternate;
-          animation: sapphireBlue 5522ms -4400ms ease-in-out infinite alternate;
-  background: linear-gradient(202deg, rgba(153, 200, 33, 0.1) 0%, rgba(177, 95, 97, 0.2) 8%, rgba(80, 20, 232, 0.4) 16%, rgba(38, 175, 140, 0.7) 25%, rgba(85, 84, 30, 0.4) 34%, rgba(2, 194, 186, 0.2) 42%, rgba(44, 96, 110, 0.1) 50%);
+  width: 862px;
+  height: 837px;
+  clip-path: polygon(26% 6%, 11% 93%, 9% 21%);
+  -webkit-animation: sapphireBlue 2894ms -5701ms ease-in-out infinite alternate;
+          animation: sapphireBlue 2894ms -5701ms ease-in-out infinite alternate;
+  background: linear-gradient(93deg, rgba(164, 149, 73, 0.1) 0%, rgba(182, 81, 23, 0.2) 8%, rgba(30, 146, 63, 0.4) 16%, rgba(80, 183, 40, 0.7) 25%, rgba(69, 128, 60, 0.4) 34%, rgba(192, 99, 244, 0.2) 42%, rgba(95, 47, 129, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(6) {
-  width: 592px;
-  height: 1068px;
-  clip-path: polygon(45% 96%, 18% 9%, 75% 84%);
-  -webkit-animation: sapphireBlue 2244ms -7615ms ease-in-out infinite alternate;
-          animation: sapphireBlue 2244ms -7615ms ease-in-out infinite alternate;
-  background: linear-gradient(215deg, rgba(247, 106, 21, 0.1) 0%, rgba(126, 23, 113, 0.2) 8%, rgba(135, 70, 73, 0.4) 16%, rgba(78, 125, 216, 0.7) 25%, rgba(37, 21, 245, 0.4) 34%, rgba(99, 254, 241, 0.2) 42%, rgba(75, 246, 28, 0.1) 50%);
+  width: 809px;
+  height: 870px;
+  clip-path: polygon(38% 10%, 7% 72%, 6% 84%);
+  -webkit-animation: sapphireBlue 5542ms -8955ms ease-in-out infinite alternate;
+          animation: sapphireBlue 5542ms -8955ms ease-in-out infinite alternate;
+  background: linear-gradient(239deg, rgba(41, 93, 184, 0.1) 0%, rgba(13, 55, 252, 0.2) 8%, rgba(212, 245, 12, 0.4) 16%, rgba(246, 139, 6, 0.7) 25%, rgba(180, 161, 138, 0.4) 34%, rgba(214, 248, 226, 0.2) 42%, rgba(76, 198, 150, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(7) {
-  width: 678px;
-  height: 701px;
-  clip-path: polygon(77% 80%, 32% 3%, 14% 39%);
-  -webkit-animation: sapphireBlue 4127ms -2377ms ease-in-out infinite alternate;
-          animation: sapphireBlue 4127ms -2377ms ease-in-out infinite alternate;
-  background: linear-gradient(252deg, rgba(202, 232, 107, 0.1) 0%, rgba(147, 213, 2, 0.2) 8%, rgba(50, 216, 2, 0.4) 16%, rgba(65, 124, 221, 0.7) 25%, rgba(196, 221, 66, 0.4) 34%, rgba(132, 20, 111, 0.2) 42%, rgba(197, 65, 99, 0.1) 50%);
+  width: 502px;
+  height: 690px;
+  clip-path: polygon(31% 30%, 84% 99%, 9% 65%);
+  -webkit-animation: sapphireBlue 2197ms -189ms ease-in-out infinite alternate;
+          animation: sapphireBlue 2197ms -189ms ease-in-out infinite alternate;
+  background: linear-gradient(230deg, rgba(214, 70, 177, 0.1) 0%, rgba(50, 66, 180, 0.2) 8%, rgba(54, 125, 164, 0.4) 16%, rgba(232, 224, 15, 0.7) 25%, rgba(68, 56, 9, 0.4) 34%, rgba(227, 194, 25, 0.2) 42%, rgba(44, 236, 29, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(8) {
-  width: 701px;
-  height: 823px;
-  clip-path: polygon(32% 96%, 67% 51%, 14% 53%);
-  -webkit-animation: sapphireBlue 4094ms -38ms ease-in-out infinite alternate;
-          animation: sapphireBlue 4094ms -38ms ease-in-out infinite alternate;
-  background: linear-gradient(195deg, rgba(152, 40, 34, 0.1) 0%, rgba(185, 229, 181, 0.2) 8%, rgba(175, 120, 209, 0.4) 16%, rgba(192, 193, 135, 0.7) 25%, rgba(73, 184, 4, 0.4) 34%, rgba(38, 53, 7, 0.2) 42%, rgba(102, 30, 76, 0.1) 50%);
+  width: 479px;
+  height: 1035px;
+  clip-path: polygon(94% 1%, 67% 9%, 65% 15%);
+  -webkit-animation: sapphireBlue 2553ms -7811ms ease-in-out infinite alternate;
+          animation: sapphireBlue 2553ms -7811ms ease-in-out infinite alternate;
+  background: linear-gradient(46deg, rgba(204, 73, 114, 0.1) 0%, rgba(41, 96, 109, 0.2) 8%, rgba(64, 247, 186, 0.4) 16%, rgba(168, 190, 64, 0.7) 25%, rgba(107, 245, 219, 0.4) 34%, rgba(202, 79, 142, 0.2) 42%, rgba(220, 170, 82, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(9) {
-  width: 892px;
-  height: 646px;
-  clip-path: polygon(26% 31%, 60% 98%, 87% 59%);
-  -webkit-animation: sapphireBlue 2640ms -2835ms ease-in-out infinite alternate;
-          animation: sapphireBlue 2640ms -2835ms ease-in-out infinite alternate;
-  background: linear-gradient(100deg, rgba(228, 52, 170, 0.1) 0%, rgba(27, 148, 86, 0.2) 8%, rgba(137, 5, 119, 0.4) 16%, rgba(188, 66, 13, 0.7) 25%, rgba(107, 64, 200, 0.4) 34%, rgba(149, 55, 190, 0.2) 42%, rgba(131, 150, 43, 0.1) 50%);
+  width: 823px;
+  height: 716px;
+  clip-path: polygon(8% 52%, 18% 56%, 48% 44%);
+  -webkit-animation: sapphireBlue 2082ms -145ms ease-in-out infinite alternate;
+          animation: sapphireBlue 2082ms -145ms ease-in-out infinite alternate;
+  background: linear-gradient(9deg, rgba(223, 170, 187, 0.1) 0%, rgba(139, 176, 251, 0.2) 8%, rgba(128, 7, 236, 0.4) 16%, rgba(230, 165, 23, 0.7) 25%, rgba(86, 6, 164, 0.4) 34%, rgba(76, 219, 255, 0.2) 42%, rgba(248, 104, 45, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(10) {
-  width: 648px;
-  height: 933px;
-  clip-path: polygon(36% 2%, 80% 84%, 53% 7%);
-  -webkit-animation: sapphireBlue 5992ms -8283ms ease-in-out infinite alternate;
-          animation: sapphireBlue 5992ms -8283ms ease-in-out infinite alternate;
-  background: linear-gradient(223deg, rgba(88, 187, 201, 0.1) 0%, rgba(92, 121, 108, 0.2) 8%, rgba(242, 82, 147, 0.4) 16%, rgba(208, 101, 101, 0.7) 25%, rgba(179, 166, 112, 0.4) 34%, rgba(187, 198, 36, 0.2) 42%, rgba(62, 23, 220, 0.1) 50%);
+  width: 841px;
+  height: 999px;
+  clip-path: polygon(61% 90%, 7% 51%, 37% 29%);
+  -webkit-animation: sapphireBlue 3143ms -1094ms ease-in-out infinite alternate;
+          animation: sapphireBlue 3143ms -1094ms ease-in-out infinite alternate;
+  background: linear-gradient(235deg, rgba(110, 66, 220, 0.1) 0%, rgba(68, 33, 24, 0.2) 8%, rgba(187, 221, 217, 0.4) 16%, rgba(19, 135, 73, 0.7) 25%, rgba(173, 109, 174, 0.4) 34%, rgba(221, 90, 240, 0.2) 42%, rgba(135, 45, 61, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(11) {
-  width: 812px;
-  height: 828px;
-  clip-path: polygon(97% 89%, 27% 82%, 26% 72%);
-  -webkit-animation: sapphireBlue 5130ms -6899ms ease-in-out infinite alternate;
-          animation: sapphireBlue 5130ms -6899ms ease-in-out infinite alternate;
-  background: linear-gradient(110deg, rgba(201, 218, 19, 0.1) 0%, rgba(225, 33, 205, 0.2) 8%, rgba(249, 187, 226, 0.4) 16%, rgba(150, 211, 166, 0.7) 25%, rgba(20, 44, 130, 0.4) 34%, rgba(50, 107, 156, 0.2) 42%, rgba(204, 194, 91, 0.1) 50%);
+  width: 610px;
+  height: 1059px;
+  clip-path: polygon(58% 43%, 22% 43%, 66% 78%);
+  -webkit-animation: sapphireBlue 3594ms -1893ms ease-in-out infinite alternate;
+          animation: sapphireBlue 3594ms -1893ms ease-in-out infinite alternate;
+  background: linear-gradient(172deg, rgba(201, 250, 19, 0.1) 0%, rgba(174, 54, 100, 0.2) 8%, rgba(62, 203, 87, 0.4) 16%, rgba(147, 156, 3, 0.7) 25%, rgba(16, 162, 84, 0.4) 34%, rgba(61, 150, 74, 0.2) 42%, rgba(119, 226, 80, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(12) {
-  width: 732px;
-  height: 801px;
-  clip-path: polygon(14% 91%, 46% 85%, 90% 6%);
-  -webkit-animation: sapphireBlue 5630ms -1001ms ease-in-out infinite alternate;
-          animation: sapphireBlue 5630ms -1001ms ease-in-out infinite alternate;
-  background: linear-gradient(73deg, rgba(204, 59, 150, 0.1) 0%, rgba(169, 253, 199, 0.2) 8%, rgba(196, 62, 159, 0.4) 16%, rgba(192, 126, 225, 0.7) 25%, rgba(186, 81, 232, 0.4) 34%, rgba(23, 251, 144, 0.2) 42%, rgba(43, 158, 47, 0.1) 50%);
+  width: 543px;
+  height: 1060px;
+  clip-path: polygon(67% 25%, 6% 62%, 71% 54%);
+  -webkit-animation: sapphireBlue 5880ms -2503ms ease-in-out infinite alternate;
+          animation: sapphireBlue 5880ms -2503ms ease-in-out infinite alternate;
+  background: linear-gradient(343deg, rgba(166, 144, 131, 0.1) 0%, rgba(222, 37, 54, 0.2) 8%, rgba(72, 27, 79, 0.4) 16%, rgba(203, 39, 195, 0.7) 25%, rgba(183, 202, 76, 0.4) 34%, rgba(212, 6, 136, 0.2) 42%, rgba(249, 239, 19, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(13) {
-  width: 617px;
-  height: 683px;
-  clip-path: polygon(59% 59%, 78% 83%, 14% 70%);
-  -webkit-animation: sapphireBlue 3994ms -9453ms ease-in-out infinite alternate;
-          animation: sapphireBlue 3994ms -9453ms ease-in-out infinite alternate;
-  background: linear-gradient(281deg, rgba(211, 20, 69, 0.1) 0%, rgba(95, 64, 60, 0.2) 8%, rgba(12, 108, 4, 0.4) 16%, rgba(203, 119, 69, 0.7) 25%, rgba(194, 178, 169, 0.4) 34%, rgba(176, 3, 162, 0.2) 42%, rgba(41, 124, 57, 0.1) 50%);
+  width: 620px;
+  height: 750px;
+  clip-path: polygon(45% 76%, 86% 9%, 47% 54%);
+  -webkit-animation: sapphireBlue 2065ms -8751ms ease-in-out infinite alternate;
+          animation: sapphireBlue 2065ms -8751ms ease-in-out infinite alternate;
+  background: linear-gradient(237deg, rgba(12, 244, 107, 0.1) 0%, rgba(20, 64, 94, 0.2) 8%, rgba(8, 131, 154, 0.4) 16%, rgba(253, 156, 56, 0.7) 25%, rgba(209, 136, 77, 0.4) 34%, rgba(122, 8, 249, 0.2) 42%, rgba(179, 82, 89, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(14) {
-  width: 696px;
-  height: 826px;
-  clip-path: polygon(39% 32%, 99% 35%, 26% 37%);
-  -webkit-animation: sapphireBlue 5971ms -1848ms ease-in-out infinite alternate;
-          animation: sapphireBlue 5971ms -1848ms ease-in-out infinite alternate;
-  background: linear-gradient(143deg, rgba(48, 250, 150, 0.1) 0%, rgba(249, 9, 220, 0.2) 8%, rgba(51, 111, 179, 0.4) 16%, rgba(122, 61, 109, 0.7) 25%, rgba(97, 74, 17, 0.4) 34%, rgba(174, 2, 92, 0.2) 42%, rgba(126, 164, 56, 0.1) 50%);
+  width: 551px;
+  height: 687px;
+  clip-path: polygon(35% 67%, 64% 45%, 93% 22%);
+  -webkit-animation: sapphireBlue 2865ms -3985ms ease-in-out infinite alternate;
+          animation: sapphireBlue 2865ms -3985ms ease-in-out infinite alternate;
+  background: linear-gradient(135deg, rgba(118, 237, 120, 0.1) 0%, rgba(58, 43, 151, 0.2) 8%, rgba(41, 68, 200, 0.4) 16%, rgba(171, 243, 162, 0.7) 25%, rgba(193, 242, 52, 0.4) 34%, rgba(95, 9, 241, 0.2) 42%, rgba(144, 9, 85, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(15) {
-  width: 863px;
-  height: 882px;
-  clip-path: polygon(51% 33%, 54% 20%, 65% 50%);
-  -webkit-animation: sapphireBlue 5373ms -9093ms ease-in-out infinite alternate;
-          animation: sapphireBlue 5373ms -9093ms ease-in-out infinite alternate;
-  background: linear-gradient(192deg, rgba(19, 22, 2, 0.1) 0%, rgba(223, 115, 176, 0.2) 8%, rgba(152, 20, 25, 0.4) 16%, rgba(247, 84, 114, 0.7) 25%, rgba(54, 203, 105, 0.4) 34%, rgba(100, 42, 137, 0.2) 42%, rgba(102, 127, 183, 0.1) 50%);
+  width: 890px;
+  height: 974px;
+  clip-path: polygon(34% 26%, 63% 79%, 59% 87%);
+  -webkit-animation: sapphireBlue 4225ms -9062ms ease-in-out infinite alternate;
+          animation: sapphireBlue 4225ms -9062ms ease-in-out infinite alternate;
+  background: linear-gradient(264deg, rgba(26, 238, 226, 0.1) 0%, rgba(218, 195, 161, 0.2) 8%, rgba(151, 137, 49, 0.4) 16%, rgba(152, 187, 129, 0.7) 25%, rgba(97, 195, 46, 0.4) 34%, rgba(130, 186, 60, 0.2) 42%, rgba(178, 143, 92, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(16) {
-  width: 600px;
-  height: 1029px;
-  clip-path: polygon(51% 17%, 6% 40%, 77% 6%);
-  -webkit-animation: sapphireBlue 5935ms -877ms ease-in-out infinite alternate;
-          animation: sapphireBlue 5935ms -877ms ease-in-out infinite alternate;
-  background: linear-gradient(226deg, rgba(176, 85, 236, 0.1) 0%, rgba(176, 16, 226, 0.2) 8%, rgba(139, 89, 84, 0.4) 16%, rgba(235, 234, 226, 0.7) 25%, rgba(112, 155, 182, 0.4) 34%, rgba(245, 161, 124, 0.2) 42%, rgba(171, 248, 3, 0.1) 50%);
+  width: 438px;
+  height: 771px;
+  clip-path: polygon(24% 39%, 56% 81%, 77% 56%);
+  -webkit-animation: sapphireBlue 4002ms -9700ms ease-in-out infinite alternate;
+          animation: sapphireBlue 4002ms -9700ms ease-in-out infinite alternate;
+  background: linear-gradient(1deg, rgba(56, 163, 90, 0.1) 0%, rgba(137, 67, 17, 0.2) 8%, rgba(150, 181, 105, 0.4) 16%, rgba(121, 126, 209, 0.7) 25%, rgba(151, 82, 177, 0.4) 34%, rgba(74, 156, 204, 0.2) 42%, rgba(50, 186, 142, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(17) {
-  width: 818px;
-  height: 615px;
-  clip-path: polygon(93% 9%, 28% 56%, 46% 99%);
-  -webkit-animation: sapphireBlue 5772ms -9244ms ease-in-out infinite alternate;
-          animation: sapphireBlue 5772ms -9244ms ease-in-out infinite alternate;
-  background: linear-gradient(58deg, rgba(43, 148, 255, 0.1) 0%, rgba(121, 114, 225, 0.2) 8%, rgba(177, 205, 215, 0.4) 16%, rgba(95, 243, 171, 0.7) 25%, rgba(153, 241, 233, 0.4) 34%, rgba(187, 69, 167, 0.2) 42%, rgba(186, 242, 113, 0.1) 50%);
+  width: 487px;
+  height: 638px;
+  clip-path: polygon(44% 59%, 64% 71%, 20% 75%);
+  -webkit-animation: sapphireBlue 2404ms -781ms ease-in-out infinite alternate;
+          animation: sapphireBlue 2404ms -781ms ease-in-out infinite alternate;
+  background: linear-gradient(54deg, rgba(80, 237, 208, 0.1) 0%, rgba(132, 91, 20, 0.2) 8%, rgba(243, 213, 173, 0.4) 16%, rgba(100, 254, 62, 0.7) 25%, rgba(185, 239, 168, 0.4) 34%, rgba(58, 121, 203, 0.2) 42%, rgba(99, 140, 186, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(18) {
-  width: 664px;
-  height: 1071px;
-  clip-path: polygon(24% 57%, 82% 50%, 76% 57%);
-  -webkit-animation: sapphireBlue 3219ms -8419ms ease-in-out infinite alternate;
-          animation: sapphireBlue 3219ms -8419ms ease-in-out infinite alternate;
-  background: linear-gradient(196deg, rgba(211, 117, 23, 0.1) 0%, rgba(173, 241, 148, 0.2) 8%, rgba(146, 162, 56, 0.4) 16%, rgba(116, 177, 241, 0.7) 25%, rgba(143, 243, 84, 0.4) 34%, rgba(168, 155, 168, 0.2) 42%, rgba(255, 185, 150, 0.1) 50%);
+  width: 498px;
+  height: 619px;
+  clip-path: polygon(25% 47%, 21% 26%, 11% 77%);
+  -webkit-animation: sapphireBlue 4932ms -3295ms ease-in-out infinite alternate;
+          animation: sapphireBlue 4932ms -3295ms ease-in-out infinite alternate;
+  background: linear-gradient(59deg, rgba(92, 179, 209, 0.1) 0%, rgba(149, 250, 196, 0.2) 8%, rgba(154, 250, 167, 0.4) 16%, rgba(141, 3, 127, 0.7) 25%, rgba(102, 40, 139, 0.4) 34%, rgba(231, 135, 243, 0.2) 42%, rgba(224, 154, 142, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(19) {
-  width: 856px;
-  height: 779px;
-  clip-path: polygon(60% 18%, 47% 1%, 78% 29%);
-  -webkit-animation: sapphireBlue 5798ms -7517ms ease-in-out infinite alternate;
-          animation: sapphireBlue 5798ms -7517ms ease-in-out infinite alternate;
-  background: linear-gradient(282deg, rgba(151, 203, 52, 0.1) 0%, rgba(60, 142, 171, 0.2) 8%, rgba(28, 104, 87, 0.4) 16%, rgba(23, 204, 139, 0.7) 25%, rgba(253, 102, 165, 0.4) 34%, rgba(4, 236, 242, 0.2) 42%, rgba(101, 121, 84, 0.1) 50%);
+  width: 545px;
+  height: 1024px;
+  clip-path: polygon(74% 54%, 72% 71%, 47% 16%);
+  -webkit-animation: sapphireBlue 3801ms -6685ms ease-in-out infinite alternate;
+          animation: sapphireBlue 3801ms -6685ms ease-in-out infinite alternate;
+  background: linear-gradient(282deg, rgba(122, 240, 122, 0.1) 0%, rgba(231, 172, 205, 0.2) 8%, rgba(59, 4, 65, 0.4) 16%, rgba(129, 216, 176, 0.7) 25%, rgba(212, 246, 65, 0.4) 34%, rgba(166, 118, 184, 0.2) 42%, rgba(152, 50, 90, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(20) {
-  width: 594px;
-  height: 1020px;
-  clip-path: polygon(34% 58%, 56% 40%, 43% 50%);
-  -webkit-animation: sapphireBlue 5812ms -7062ms ease-in-out infinite alternate;
-          animation: sapphireBlue 5812ms -7062ms ease-in-out infinite alternate;
-  background: linear-gradient(49deg, rgba(113, 48, 225, 0.1) 0%, rgba(125, 20, 12, 0.2) 8%, rgba(96, 153, 23, 0.4) 16%, rgba(120, 26, 13, 0.7) 25%, rgba(10, 82, 76, 0.4) 34%, rgba(211, 191, 25, 0.2) 42%, rgba(199, 234, 67, 0.1) 50%);
+  width: 401px;
+  height: 1024px;
+  clip-path: polygon(39% 40%, 62% 49%, 72% 31%);
+  -webkit-animation: sapphireBlue 3613ms -6040ms ease-in-out infinite alternate;
+          animation: sapphireBlue 3613ms -6040ms ease-in-out infinite alternate;
+  background: linear-gradient(112deg, rgba(156, 167, 28, 0.1) 0%, rgba(201, 241, 228, 0.2) 8%, rgba(36, 147, 54, 0.4) 16%, rgba(172, 236, 222, 0.7) 25%, rgba(185, 157, 7, 0.4) 34%, rgba(21, 60, 125, 0.2) 42%, rgba(151, 170, 128, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(21) {
-  width: 506px;
-  height: 740px;
-  clip-path: polygon(41% 43%, 29% 86%, 77% 18%);
-  -webkit-animation: sapphireBlue 3270ms -8020ms ease-in-out infinite alternate;
-          animation: sapphireBlue 3270ms -8020ms ease-in-out infinite alternate;
-  background: linear-gradient(62deg, rgba(105, 19, 100, 0.1) 0%, rgba(142, 43, 214, 0.2) 8%, rgba(214, 126, 37, 0.4) 16%, rgba(239, 181, 114, 0.7) 25%, rgba(184, 182, 253, 0.4) 34%, rgba(180, 92, 175, 0.2) 42%, rgba(171, 246, 45, 0.1) 50%);
+  width: 720px;
+  height: 843px;
+  clip-path: polygon(97% 82%, 52% 39%, 100% 21%);
+  -webkit-animation: sapphireBlue 2401ms -5223ms ease-in-out infinite alternate;
+          animation: sapphireBlue 2401ms -5223ms ease-in-out infinite alternate;
+  background: linear-gradient(347deg, rgba(88, 35, 135, 0.1) 0%, rgba(197, 232, 22, 0.2) 8%, rgba(59, 122, 3, 0.4) 16%, rgba(111, 248, 104, 0.7) 25%, rgba(5, 97, 254, 0.4) 34%, rgba(105, 16, 235, 0.2) 42%, rgba(11, 55, 106, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(22) {
-  width: 832px;
-  height: 646px;
-  clip-path: polygon(20% 98%, 11% 33%, 23% 42%);
-  -webkit-animation: sapphireBlue 4154ms -786ms ease-in-out infinite alternate;
-          animation: sapphireBlue 4154ms -786ms ease-in-out infinite alternate;
-  background: linear-gradient(226deg, rgba(253, 37, 85, 0.1) 0%, rgba(156, 231, 99, 0.2) 8%, rgba(142, 45, 223, 0.4) 16%, rgba(100, 216, 103, 0.7) 25%, rgba(226, 162, 165, 0.4) 34%, rgba(199, 55, 49, 0.2) 42%, rgba(10, 137, 107, 0.1) 50%);
+  width: 577px;
+  height: 760px;
+  clip-path: polygon(65% 12%, 24% 69%, 9% 13%);
+  -webkit-animation: sapphireBlue 3863ms -6595ms ease-in-out infinite alternate;
+          animation: sapphireBlue 3863ms -6595ms ease-in-out infinite alternate;
+  background: linear-gradient(276deg, rgba(29, 185, 223, 0.1) 0%, rgba(36, 199, 92, 0.2) 8%, rgba(137, 186, 220, 0.4) 16%, rgba(72, 104, 205, 0.7) 25%, rgba(7, 210, 19, 0.4) 34%, rgba(118, 13, 183, 0.2) 42%, rgba(112, 81, 181, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(23) {
-  width: 788px;
-  height: 741px;
-  clip-path: polygon(38% 98%, 86% 17%, 9% 38%);
-  -webkit-animation: sapphireBlue 2352ms -8571ms ease-in-out infinite alternate;
-          animation: sapphireBlue 2352ms -8571ms ease-in-out infinite alternate;
-  background: linear-gradient(28deg, rgba(226, 49, 47, 0.1) 0%, rgba(35, 236, 155, 0.2) 8%, rgba(31, 164, 16, 0.4) 16%, rgba(76, 135, 86, 0.7) 25%, rgba(236, 86, 238, 0.4) 34%, rgba(94, 179, 239, 0.2) 42%, rgba(173, 159, 129, 0.1) 50%);
+  width: 767px;
+  height: 766px;
+  clip-path: polygon(22% 99%, 18% 67%, 64% 51%);
+  -webkit-animation: sapphireBlue 4646ms -9263ms ease-in-out infinite alternate;
+          animation: sapphireBlue 4646ms -9263ms ease-in-out infinite alternate;
+  background: linear-gradient(8deg, rgba(250, 126, 236, 0.1) 0%, rgba(187, 175, 7, 0.2) 8%, rgba(115, 214, 80, 0.4) 16%, rgba(231, 78, 179, 0.7) 25%, rgba(43, 141, 165, 0.4) 34%, rgba(95, 18, 157, 0.2) 42%, rgba(234, 1, 30, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(24) {
-  width: 487px;
-  height: 943px;
-  clip-path: polygon(83% 73%, 51% 31%, 46% 14%);
-  -webkit-animation: sapphireBlue 4973ms -7224ms ease-in-out infinite alternate;
-          animation: sapphireBlue 4973ms -7224ms ease-in-out infinite alternate;
-  background: linear-gradient(286deg, rgba(246, 122, 114, 0.1) 0%, rgba(145, 127, 65, 0.2) 8%, rgba(141, 83, 136, 0.4) 16%, rgba(158, 237, 242, 0.7) 25%, rgba(9, 17, 10, 0.4) 34%, rgba(146, 3, 177, 0.2) 42%, rgba(81, 136, 132, 0.1) 50%);
+  width: 599px;
+  height: 993px;
+  clip-path: polygon(16% 77%, 52% 36%, 75% 32%);
+  -webkit-animation: sapphireBlue 5247ms -1779ms ease-in-out infinite alternate;
+          animation: sapphireBlue 5247ms -1779ms ease-in-out infinite alternate;
+  background: linear-gradient(189deg, rgba(50, 10, 15, 0.1) 0%, rgba(118, 66, 154, 0.2) 8%, rgba(30, 249, 84, 0.4) 16%, rgba(53, 80, 223, 0.7) 25%, rgba(253, 210, 83, 0.4) 34%, rgba(62, 131, 194, 0.2) 42%, rgba(248, 75, 27, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(25) {
-  width: 477px;
-  height: 653px;
-  clip-path: polygon(68% 19%, 85% 92%, 83% 57%);
-  -webkit-animation: sapphireBlue 5999ms -9909ms ease-in-out infinite alternate;
-          animation: sapphireBlue 5999ms -9909ms ease-in-out infinite alternate;
-  background: linear-gradient(41deg, rgba(169, 61, 239, 0.1) 0%, rgba(234, 127, 1, 0.2) 8%, rgba(194, 85, 193, 0.4) 16%, rgba(46, 67, 134, 0.7) 25%, rgba(109, 124, 214, 0.4) 34%, rgba(34, 187, 88, 0.2) 42%, rgba(132, 40, 93, 0.1) 50%);
+  width: 416px;
+  height: 803px;
+  clip-path: polygon(60% 69%, 62% 26%, 26% 96%);
+  -webkit-animation: sapphireBlue 4609ms -537ms ease-in-out infinite alternate;
+          animation: sapphireBlue 4609ms -537ms ease-in-out infinite alternate;
+  background: linear-gradient(40deg, rgba(64, 201, 221, 0.1) 0%, rgba(189, 13, 29, 0.2) 8%, rgba(121, 204, 182, 0.4) 16%, rgba(27, 226, 40, 0.7) 25%, rgba(113, 159, 16, 0.4) 34%, rgba(229, 104, 242, 0.2) 42%, rgba(81, 210, 215, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(26) {
-  width: 824px;
-  height: 999px;
-  clip-path: polygon(80% 94%, 93% 80%, 9% 59%);
-  -webkit-animation: sapphireBlue 5225ms -6554ms ease-in-out infinite alternate;
-          animation: sapphireBlue 5225ms -6554ms ease-in-out infinite alternate;
-  background: linear-gradient(106deg, rgba(3, 22, 91, 0.1) 0%, rgba(35, 223, 17, 0.2) 8%, rgba(110, 117, 107, 0.4) 16%, rgba(241, 129, 48, 0.7) 25%, rgba(67, 217, 127, 0.4) 34%, rgba(60, 131, 33, 0.2) 42%, rgba(250, 76, 141, 0.1) 50%);
+  width: 748px;
+  height: 1093px;
+  clip-path: polygon(33% 84%, 11% 28%, 50% 78%);
+  -webkit-animation: sapphireBlue 4656ms -9264ms ease-in-out infinite alternate;
+          animation: sapphireBlue 4656ms -9264ms ease-in-out infinite alternate;
+  background: linear-gradient(169deg, rgba(164, 233, 148, 0.1) 0%, rgba(200, 234, 48, 0.2) 8%, rgba(49, 29, 151, 0.4) 16%, rgba(149, 164, 69, 0.7) 25%, rgba(3, 123, 156, 0.4) 34%, rgba(210, 199, 84, 0.2) 42%, rgba(111, 84, 191, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(27) {
-  width: 408px;
-  height: 810px;
-  clip-path: polygon(44% 3%, 93% 49%, 58% 79%);
-  -webkit-animation: sapphireBlue 2448ms -5113ms ease-in-out infinite alternate;
-          animation: sapphireBlue 2448ms -5113ms ease-in-out infinite alternate;
-  background: linear-gradient(357deg, rgba(194, 207, 187, 0.1) 0%, rgba(32, 213, 90, 0.2) 8%, rgba(140, 114, 178, 0.4) 16%, rgba(245, 207, 106, 0.7) 25%, rgba(150, 179, 184, 0.4) 34%, rgba(150, 159, 226, 0.2) 42%, rgba(42, 203, 50, 0.1) 50%);
+  width: 594px;
+  height: 615px;
+  clip-path: polygon(31% 13%, 11% 36%, 25% 55%);
+  -webkit-animation: sapphireBlue 5296ms -2402ms ease-in-out infinite alternate;
+          animation: sapphireBlue 5296ms -2402ms ease-in-out infinite alternate;
+  background: linear-gradient(275deg, rgba(226, 8, 46, 0.1) 0%, rgba(112, 198, 208, 0.2) 8%, rgba(188, 127, 37, 0.4) 16%, rgba(255, 22, 116, 0.7) 25%, rgba(58, 223, 178, 0.4) 34%, rgba(29, 107, 209, 0.2) 42%, rgba(182, 7, 156, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(28) {
-  width: 403px;
-  height: 684px;
-  clip-path: polygon(100% 87%, 82% 22%, 27% 32%);
-  -webkit-animation: sapphireBlue 3406ms -5118ms ease-in-out infinite alternate;
-          animation: sapphireBlue 3406ms -5118ms ease-in-out infinite alternate;
-  background: linear-gradient(51deg, rgba(101, 46, 64, 0.1) 0%, rgba(201, 229, 207, 0.2) 8%, rgba(131, 137, 82, 0.4) 16%, rgba(115, 168, 67, 0.7) 25%, rgba(83, 195, 41, 0.4) 34%, rgba(223, 130, 154, 0.2) 42%, rgba(40, 44, 177, 0.1) 50%);
+  width: 415px;
+  height: 974px;
+  clip-path: polygon(50% 63%, 41% 29%, 1% 14%);
+  -webkit-animation: sapphireBlue 4574ms -8783ms ease-in-out infinite alternate;
+          animation: sapphireBlue 4574ms -8783ms ease-in-out infinite alternate;
+  background: linear-gradient(82deg, rgba(133, 200, 229, 0.1) 0%, rgba(20, 243, 27, 0.2) 8%, rgba(184, 225, 208, 0.4) 16%, rgba(203, 223, 89, 0.7) 25%, rgba(109, 172, 208, 0.4) 34%, rgba(59, 200, 98, 0.2) 42%, rgba(197, 158, 253, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(29) {
-  width: 528px;
-  height: 1079px;
-  clip-path: polygon(58% 71%, 92% 60%, 23% 76%);
-  -webkit-animation: sapphireBlue 5784ms -4225ms ease-in-out infinite alternate;
-          animation: sapphireBlue 5784ms -4225ms ease-in-out infinite alternate;
-  background: linear-gradient(85deg, rgba(232, 254, 124, 0.1) 0%, rgba(143, 116, 12, 0.2) 8%, rgba(119, 139, 120, 0.4) 16%, rgba(7, 29, 132, 0.7) 25%, rgba(165, 226, 248, 0.4) 34%, rgba(105, 199, 50, 0.2) 42%, rgba(210, 199, 128, 0.1) 50%);
+  width: 572px;
+  height: 671px;
+  clip-path: polygon(31% 68%, 18% 35%, 46% 24%);
+  -webkit-animation: sapphireBlue 2697ms -4369ms ease-in-out infinite alternate;
+          animation: sapphireBlue 2697ms -4369ms ease-in-out infinite alternate;
+  background: linear-gradient(141deg, rgba(159, 161, 107, 0.1) 0%, rgba(240, 84, 126, 0.2) 8%, rgba(246, 125, 205, 0.4) 16%, rgba(72, 44, 137, 0.7) 25%, rgba(117, 32, 244, 0.4) 34%, rgba(71, 241, 16, 0.2) 42%, rgba(44, 213, 234, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(30) {
-  width: 838px;
-  height: 609px;
-  clip-path: polygon(79% 14%, 6% 27%, 91% 9%);
-  -webkit-animation: sapphireBlue 3776ms -4644ms ease-in-out infinite alternate;
-          animation: sapphireBlue 3776ms -4644ms ease-in-out infinite alternate;
-  background: linear-gradient(195deg, rgba(52, 138, 88, 0.1) 0%, rgba(183, 38, 97, 0.2) 8%, rgba(15, 212, 45, 0.4) 16%, rgba(199, 148, 66, 0.7) 25%, rgba(87, 250, 86, 0.4) 34%, rgba(238, 91, 18, 0.2) 42%, rgba(25, 200, 130, 0.1) 50%);
+  width: 888px;
+  height: 754px;
+  clip-path: polygon(5% 51%, 67% 32%, 52% 40%);
+  -webkit-animation: sapphireBlue 3327ms -8680ms ease-in-out infinite alternate;
+          animation: sapphireBlue 3327ms -8680ms ease-in-out infinite alternate;
+  background: linear-gradient(203deg, rgba(97, 192, 210, 0.1) 0%, rgba(225, 49, 120, 0.2) 8%, rgba(186, 226, 9, 0.4) 16%, rgba(183, 84, 138, 0.7) 25%, rgba(223, 145, 50, 0.4) 34%, rgba(89, 91, 107, 0.2) 42%, rgba(125, 49, 103, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(31) {
-  width: 720px;
-  height: 1012px;
-  clip-path: polygon(88% 22%, 50% 83%, 9% 20%);
-  -webkit-animation: sapphireBlue 3126ms -468ms ease-in-out infinite alternate;
-          animation: sapphireBlue 3126ms -468ms ease-in-out infinite alternate;
-  background: linear-gradient(140deg, rgba(209, 43, 172, 0.1) 0%, rgba(42, 7, 211, 0.2) 8%, rgba(219, 51, 153, 0.4) 16%, rgba(131, 157, 176, 0.7) 25%, rgba(2, 228, 23, 0.4) 34%, rgba(171, 212, 82, 0.2) 42%, rgba(174, 188, 57, 0.1) 50%);
+  width: 728px;
+  height: 673px;
+  clip-path: polygon(60% 82%, 55% 18%, 57% 29%);
+  -webkit-animation: sapphireBlue 4923ms -3624ms ease-in-out infinite alternate;
+          animation: sapphireBlue 4923ms -3624ms ease-in-out infinite alternate;
+  background: linear-gradient(54deg, rgba(210, 235, 144, 0.1) 0%, rgba(38, 76, 178, 0.2) 8%, rgba(86, 199, 54, 0.4) 16%, rgba(147, 144, 198, 0.7) 25%, rgba(123, 41, 247, 0.4) 34%, rgba(135, 127, 139, 0.2) 42%, rgba(252, 1, 132, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(32) {
-  width: 741px;
-  height: 1090px;
-  clip-path: polygon(77% 30%, 49% 65%, 13% 20%);
-  -webkit-animation: sapphireBlue 2048ms -6536ms ease-in-out infinite alternate;
-          animation: sapphireBlue 2048ms -6536ms ease-in-out infinite alternate;
-  background: linear-gradient(164deg, rgba(177, 254, 3, 0.1) 0%, rgba(140, 54, 188, 0.2) 8%, rgba(200, 157, 214, 0.4) 16%, rgba(239, 33, 176, 0.7) 25%, rgba(204, 146, 129, 0.4) 34%, rgba(24, 117, 122, 0.2) 42%, rgba(138, 231, 83, 0.1) 50%);
+  width: 623px;
+  height: 817px;
+  clip-path: polygon(60% 82%, 99% 70%, 36% 30%);
+  -webkit-animation: sapphireBlue 3599ms -838ms ease-in-out infinite alternate;
+          animation: sapphireBlue 3599ms -838ms ease-in-out infinite alternate;
+  background: linear-gradient(174deg, rgba(97, 111, 209, 0.1) 0%, rgba(231, 81, 163, 0.2) 8%, rgba(14, 56, 11, 0.4) 16%, rgba(229, 136, 81, 0.7) 25%, rgba(45, 163, 63, 0.4) 34%, rgba(252, 193, 218, 0.2) 42%, rgba(112, 49, 166, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(33) {
-  width: 790px;
-  height: 1097px;
-  clip-path: polygon(26% 25%, 54% 80%, 100% 8%);
-  -webkit-animation: sapphireBlue 5437ms -8210ms ease-in-out infinite alternate;
-          animation: sapphireBlue 5437ms -8210ms ease-in-out infinite alternate;
-  background: linear-gradient(200deg, rgba(118, 81, 74, 0.1) 0%, rgba(84, 164, 117, 0.2) 8%, rgba(44, 88, 184, 0.4) 16%, rgba(98, 139, 98, 0.7) 25%, rgba(55, 166, 100, 0.4) 34%, rgba(42, 211, 226, 0.2) 42%, rgba(92, 133, 235, 0.1) 50%);
+  width: 752px;
+  height: 670px;
+  clip-path: polygon(73% 12%, 27% 20%, 47% 2%);
+  -webkit-animation: sapphireBlue 3648ms -6628ms ease-in-out infinite alternate;
+          animation: sapphireBlue 3648ms -6628ms ease-in-out infinite alternate;
+  background: linear-gradient(228deg, rgba(172, 208, 84, 0.1) 0%, rgba(24, 60, 149, 0.2) 8%, rgba(52, 253, 156, 0.4) 16%, rgba(133, 70, 106, 0.7) 25%, rgba(211, 117, 192, 0.4) 34%, rgba(178, 145, 19, 0.2) 42%, rgba(107, 149, 188, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(34) {
-  width: 470px;
-  height: 886px;
-  clip-path: polygon(63% 11%, 43% 69%, 9% 88%);
-  -webkit-animation: sapphireBlue 4952ms -1208ms ease-in-out infinite alternate;
-          animation: sapphireBlue 4952ms -1208ms ease-in-out infinite alternate;
-  background: linear-gradient(246deg, rgba(164, 185, 181, 0.1) 0%, rgba(98, 32, 124, 0.2) 8%, rgba(205, 190, 31, 0.4) 16%, rgba(192, 234, 91, 0.7) 25%, rgba(244, 24, 33, 0.4) 34%, rgba(163, 162, 149, 0.2) 42%, rgba(105, 235, 174, 0.1) 50%);
+  width: 542px;
+  height: 783px;
+  clip-path: polygon(95% 46%, 10% 41%, 10% 26%);
+  -webkit-animation: sapphireBlue 3087ms -6313ms ease-in-out infinite alternate;
+          animation: sapphireBlue 3087ms -6313ms ease-in-out infinite alternate;
+  background: linear-gradient(80deg, rgba(53, 159, 82, 0.1) 0%, rgba(62, 144, 204, 0.2) 8%, rgba(72, 215, 162, 0.4) 16%, rgba(11, 183, 41, 0.7) 25%, rgba(45, 117, 151, 0.4) 34%, rgba(98, 75, 126, 0.2) 42%, rgba(28, 19, 131, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(35) {
-  width: 468px;
-  height: 748px;
-  clip-path: polygon(54% 35%, 53% 17%, 76% 82%);
-  -webkit-animation: sapphireBlue 2981ms -4509ms ease-in-out infinite alternate;
-          animation: sapphireBlue 2981ms -4509ms ease-in-out infinite alternate;
-  background: linear-gradient(9deg, rgba(176, 189, 148, 0.1) 0%, rgba(243, 238, 57, 0.2) 8%, rgba(87, 236, 244, 0.4) 16%, rgba(34, 237, 183, 0.7) 25%, rgba(246, 126, 11, 0.4) 34%, rgba(201, 134, 208, 0.2) 42%, rgba(197, 27, 70, 0.1) 50%);
+  width: 581px;
+  height: 712px;
+  clip-path: polygon(100% 40%, 16% 2%, 92% 83%);
+  -webkit-animation: sapphireBlue 5196ms -494ms ease-in-out infinite alternate;
+          animation: sapphireBlue 5196ms -494ms ease-in-out infinite alternate;
+  background: linear-gradient(229deg, rgba(217, 35, 224, 0.1) 0%, rgba(138, 135, 148, 0.2) 8%, rgba(115, 206, 201, 0.4) 16%, rgba(22, 29, 55, 0.7) 25%, rgba(173, 106, 242, 0.4) 34%, rgba(193, 20, 60, 0.2) 42%, rgba(225, 89, 69, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(36) {
-  width: 793px;
-  height: 670px;
-  clip-path: polygon(77% 81%, 90% 23%, 17% 31%);
-  -webkit-animation: sapphireBlue 2643ms -8759ms ease-in-out infinite alternate;
-          animation: sapphireBlue 2643ms -8759ms ease-in-out infinite alternate;
-  background: linear-gradient(152deg, rgba(205, 121, 239, 0.1) 0%, rgba(114, 135, 164, 0.2) 8%, rgba(133, 188, 55, 0.4) 16%, rgba(78, 70, 152, 0.7) 25%, rgba(62, 233, 178, 0.4) 34%, rgba(99, 156, 162, 0.2) 42%, rgba(10, 173, 78, 0.1) 50%);
+  width: 859px;
+  height: 1027px;
+  clip-path: polygon(17% 57%, 89% 62%, 60% 70%);
+  -webkit-animation: sapphireBlue 4869ms -9097ms ease-in-out infinite alternate;
+          animation: sapphireBlue 4869ms -9097ms ease-in-out infinite alternate;
+  background: linear-gradient(150deg, rgba(22, 34, 42, 0.1) 0%, rgba(104, 252, 116, 0.2) 8%, rgba(43, 239, 150, 0.4) 16%, rgba(216, 90, 197, 0.7) 25%, rgba(104, 14, 85, 0.4) 34%, rgba(209, 145, 233, 0.2) 42%, rgba(156, 179, 53, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(37) {
-  width: 534px;
-  height: 795px;
-  clip-path: polygon(58% 95%, 69% 33%, 47% 31%);
-  -webkit-animation: sapphireBlue 3910ms -6023ms ease-in-out infinite alternate;
-          animation: sapphireBlue 3910ms -6023ms ease-in-out infinite alternate;
-  background: linear-gradient(61deg, rgba(172, 151, 94, 0.1) 0%, rgba(96, 93, 136, 0.2) 8%, rgba(136, 239, 222, 0.4) 16%, rgba(145, 174, 8, 0.7) 25%, rgba(128, 198, 198, 0.4) 34%, rgba(135, 167, 37, 0.2) 42%, rgba(39, 158, 83, 0.1) 50%);
+  width: 775px;
+  height: 874px;
+  clip-path: polygon(5% 76%, 38% 37%, 35% 75%);
+  -webkit-animation: sapphireBlue 5266ms -8703ms ease-in-out infinite alternate;
+          animation: sapphireBlue 5266ms -8703ms ease-in-out infinite alternate;
+  background: linear-gradient(342deg, rgba(231, 243, 218, 0.1) 0%, rgba(220, 230, 240, 0.2) 8%, rgba(150, 40, 232, 0.4) 16%, rgba(218, 82, 123, 0.7) 25%, rgba(109, 173, 205, 0.4) 34%, rgba(102, 156, 155, 0.2) 42%, rgba(88, 100, 86, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(38) {
-  width: 534px;
-  height: 679px;
-  clip-path: polygon(54% 38%, 69% 70%, 77% 80%);
-  -webkit-animation: sapphireBlue 5223ms -9365ms ease-in-out infinite alternate;
-          animation: sapphireBlue 5223ms -9365ms ease-in-out infinite alternate;
-  background: linear-gradient(100deg, rgba(236, 75, 204, 0.1) 0%, rgba(21, 11, 225, 0.2) 8%, rgba(162, 49, 169, 0.4) 16%, rgba(153, 195, 86, 0.7) 25%, rgba(153, 87, 171, 0.4) 34%, rgba(77, 143, 27, 0.2) 42%, rgba(125, 120, 243, 0.1) 50%);
+  width: 736px;
+  height: 1017px;
+  clip-path: polygon(99% 89%, 46% 93%, 67% 64%);
+  -webkit-animation: sapphireBlue 2076ms -5837ms ease-in-out infinite alternate;
+          animation: sapphireBlue 2076ms -5837ms ease-in-out infinite alternate;
+  background: linear-gradient(16deg, rgba(190, 95, 128, 0.1) 0%, rgba(201, 85, 50, 0.2) 8%, rgba(227, 137, 64, 0.4) 16%, rgba(152, 75, 243, 0.7) 25%, rgba(89, 250, 246, 0.4) 34%, rgba(32, 60, 123, 0.2) 42%, rgba(114, 12, 169, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(39) {
-  width: 426px;
-  height: 1035px;
-  clip-path: polygon(73% 50%, 11% 87%, 52% 68%);
-  -webkit-animation: sapphireBlue 5573ms -924ms ease-in-out infinite alternate;
-          animation: sapphireBlue 5573ms -924ms ease-in-out infinite alternate;
-  background: linear-gradient(278deg, rgba(164, 168, 101, 0.1) 0%, rgba(162, 191, 166, 0.2) 8%, rgba(107, 160, 104, 0.4) 16%, rgba(125, 140, 45, 0.7) 25%, rgba(127, 231, 12, 0.4) 34%, rgba(23, 131, 247, 0.2) 42%, rgba(163, 197, 76, 0.1) 50%);
+  width: 739px;
+  height: 946px;
+  clip-path: polygon(79% 3%, 30% 11%, 75% 47%);
+  -webkit-animation: sapphireBlue 4039ms -2509ms ease-in-out infinite alternate;
+          animation: sapphireBlue 4039ms -2509ms ease-in-out infinite alternate;
+  background: linear-gradient(278deg, rgba(227, 108, 86, 0.1) 0%, rgba(7, 211, 29, 0.2) 8%, rgba(208, 133, 110, 0.4) 16%, rgba(3, 209, 222, 0.7) 25%, rgba(89, 163, 150, 0.4) 34%, rgba(164, 104, 179, 0.2) 42%, rgba(114, 149, 239, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(40) {
-  width: 406px;
-  height: 681px;
-  clip-path: polygon(44% 2%, 29% 72%, 89% 21%);
-  -webkit-animation: sapphireBlue 3681ms -3833ms ease-in-out infinite alternate;
-          animation: sapphireBlue 3681ms -3833ms ease-in-out infinite alternate;
-  background: linear-gradient(142deg, rgba(113, 16, 214, 0.1) 0%, rgba(81, 251, 21, 0.2) 8%, rgba(27, 76, 229, 0.4) 16%, rgba(235, 159, 50, 0.7) 25%, rgba(64, 74, 239, 0.4) 34%, rgba(93, 221, 26, 0.2) 42%, rgba(19, 38, 199, 0.1) 50%);
+  width: 776px;
+  height: 775px;
+  clip-path: polygon(20% 11%, 47% 20%, 58% 76%);
+  -webkit-animation: sapphireBlue 4219ms -9084ms ease-in-out infinite alternate;
+          animation: sapphireBlue 4219ms -9084ms ease-in-out infinite alternate;
+  background: linear-gradient(238deg, rgba(189, 146, 114, 0.1) 0%, rgba(124, 207, 198, 0.2) 8%, rgba(26, 194, 135, 0.4) 16%, rgba(31, 76, 214, 0.7) 25%, rgba(131, 250, 145, 0.4) 34%, rgba(135, 111, 151, 0.2) 42%, rgba(108, 157, 143, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(41) {
-  width: 608px;
-  height: 647px;
-  clip-path: polygon(71% 76%, 32% 56%, 62% 79%);
-  -webkit-animation: sapphireBlue 2402ms -6113ms ease-in-out infinite alternate;
-          animation: sapphireBlue 2402ms -6113ms ease-in-out infinite alternate;
-  background: linear-gradient(136deg, rgba(73, 23, 231, 0.1) 0%, rgba(161, 91, 239, 0.2) 8%, rgba(54, 121, 97, 0.4) 16%, rgba(154, 199, 88, 0.7) 25%, rgba(205, 29, 126, 0.4) 34%, rgba(96, 123, 243, 0.2) 42%, rgba(92, 186, 11, 0.1) 50%);
+  width: 871px;
+  height: 712px;
+  clip-path: polygon(1% 34%, 79% 63%, 28% 83%);
+  -webkit-animation: sapphireBlue 3720ms -9108ms ease-in-out infinite alternate;
+          animation: sapphireBlue 3720ms -9108ms ease-in-out infinite alternate;
+  background: linear-gradient(98deg, rgba(31, 84, 100, 0.1) 0%, rgba(145, 168, 172, 0.2) 8%, rgba(79, 50, 50, 0.4) 16%, rgba(223, 36, 215, 0.7) 25%, rgba(119, 27, 20, 0.4) 34%, rgba(246, 3, 63, 0.2) 42%, rgba(116, 64, 246, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(42) {
-  width: 497px;
-  height: 798px;
-  clip-path: polygon(80% 8%, 100% 90%, 88% 87%);
-  -webkit-animation: sapphireBlue 3494ms -9312ms ease-in-out infinite alternate;
-          animation: sapphireBlue 3494ms -9312ms ease-in-out infinite alternate;
-  background: linear-gradient(265deg, rgba(220, 237, 133, 0.1) 0%, rgba(180, 136, 135, 0.2) 8%, rgba(108, 184, 125, 0.4) 16%, rgba(180, 48, 94, 0.7) 25%, rgba(228, 78, 79, 0.4) 34%, rgba(64, 170, 250, 0.2) 42%, rgba(7, 9, 1, 0.1) 50%);
+  width: 535px;
+  height: 1066px;
+  clip-path: polygon(41% 28%, 14% 39%, 98% 94%);
+  -webkit-animation: sapphireBlue 3135ms -6611ms ease-in-out infinite alternate;
+          animation: sapphireBlue 3135ms -6611ms ease-in-out infinite alternate;
+  background: linear-gradient(27deg, rgba(114, 191, 238, 0.1) 0%, rgba(164, 60, 133, 0.2) 8%, rgba(150, 97, 10, 0.4) 16%, rgba(23, 244, 251, 0.7) 25%, rgba(45, 234, 40, 0.4) 34%, rgba(64, 75, 118, 0.2) 42%, rgba(32, 182, 217, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(43) {
-  width: 802px;
-  height: 739px;
-  clip-path: polygon(63% 95%, 95% 92%, 10% 46%);
-  -webkit-animation: sapphireBlue 5360ms -8668ms ease-in-out infinite alternate;
-          animation: sapphireBlue 5360ms -8668ms ease-in-out infinite alternate;
-  background: linear-gradient(99deg, rgba(183, 136, 131, 0.1) 0%, rgba(140, 167, 136, 0.2) 8%, rgba(77, 20, 45, 0.4) 16%, rgba(63, 14, 193, 0.7) 25%, rgba(214, 146, 65, 0.4) 34%, rgba(170, 199, 236, 0.2) 42%, rgba(170, 229, 102, 0.1) 50%);
+  width: 716px;
+  height: 856px;
+  clip-path: polygon(22% 75%, 46% 5%, 92% 49%);
+  -webkit-animation: sapphireBlue 4088ms -1084ms ease-in-out infinite alternate;
+          animation: sapphireBlue 4088ms -1084ms ease-in-out infinite alternate;
+  background: linear-gradient(64deg, rgba(211, 96, 125, 0.1) 0%, rgba(199, 97, 46, 0.2) 8%, rgba(92, 37, 246, 0.4) 16%, rgba(193, 150, 117, 0.7) 25%, rgba(172, 241, 105, 0.4) 34%, rgba(63, 64, 120, 0.2) 42%, rgba(122, 218, 138, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(44) {
-  width: 859px;
-  height: 668px;
-  clip-path: polygon(33% 69%, 52% 75%, 62% 53%);
-  -webkit-animation: sapphireBlue 3178ms -4048ms ease-in-out infinite alternate;
-          animation: sapphireBlue 3178ms -4048ms ease-in-out infinite alternate;
-  background: linear-gradient(161deg, rgba(151, 45, 5, 0.1) 0%, rgba(162, 243, 241, 0.2) 8%, rgba(249, 241, 98, 0.4) 16%, rgba(54, 222, 50, 0.7) 25%, rgba(164, 144, 127, 0.4) 34%, rgba(245, 80, 58, 0.2) 42%, rgba(125, 175, 131, 0.1) 50%);
+  width: 896px;
+  height: 639px;
+  clip-path: polygon(69% 97%, 80% 59%, 100% 11%);
+  -webkit-animation: sapphireBlue 5537ms -5733ms ease-in-out infinite alternate;
+          animation: sapphireBlue 5537ms -5733ms ease-in-out infinite alternate;
+  background: linear-gradient(163deg, rgba(156, 255, 222, 0.1) 0%, rgba(216, 100, 188, 0.2) 8%, rgba(42, 192, 11, 0.4) 16%, rgba(116, 32, 138, 0.7) 25%, rgba(29, 176, 235, 0.4) 34%, rgba(144, 236, 58, 0.2) 42%, rgba(247, 117, 146, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(45) {
-  width: 692px;
-  height: 1064px;
-  clip-path: polygon(97% 11%, 13% 50%, 29% 74%);
-  -webkit-animation: sapphireBlue 4584ms -5600ms ease-in-out infinite alternate;
-          animation: sapphireBlue 4584ms -5600ms ease-in-out infinite alternate;
-  background: linear-gradient(188deg, rgba(84, 204, 44, 0.1) 0%, rgba(65, 7, 149, 0.2) 8%, rgba(103, 90, 234, 0.4) 16%, rgba(254, 230, 102, 0.7) 25%, rgba(25, 142, 44, 0.4) 34%, rgba(6, 156, 40, 0.2) 42%, rgba(22, 92, 164, 0.1) 50%);
+  width: 570px;
+  height: 637px;
+  clip-path: polygon(21% 9%, 72% 60%, 50% 39%);
+  -webkit-animation: sapphireBlue 5903ms -3993ms ease-in-out infinite alternate;
+          animation: sapphireBlue 5903ms -3993ms ease-in-out infinite alternate;
+  background: linear-gradient(325deg, rgba(247, 123, 153, 0.1) 0%, rgba(175, 165, 14, 0.2) 8%, rgba(207, 218, 112, 0.4) 16%, rgba(157, 168, 36, 0.7) 25%, rgba(83, 129, 94, 0.4) 34%, rgba(174, 110, 54, 0.2) 42%, rgba(242, 148, 101, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(46) {
-  width: 683px;
-  height: 623px;
-  clip-path: polygon(49% 42%, 8% 45%, 48% 75%);
-  -webkit-animation: sapphireBlue 4830ms -549ms ease-in-out infinite alternate;
-          animation: sapphireBlue 4830ms -549ms ease-in-out infinite alternate;
-  background: linear-gradient(327deg, rgba(243, 34, 214, 0.1) 0%, rgba(88, 101, 41, 0.2) 8%, rgba(173, 55, 220, 0.4) 16%, rgba(152, 247, 10, 0.7) 25%, rgba(235, 186, 160, 0.4) 34%, rgba(8, 234, 66, 0.2) 42%, rgba(44, 175, 129, 0.1) 50%);
+  width: 705px;
+  height: 932px;
+  clip-path: polygon(59% 9%, 44% 7%, 46% 92%);
+  -webkit-animation: sapphireBlue 2479ms -7536ms ease-in-out infinite alternate;
+          animation: sapphireBlue 2479ms -7536ms ease-in-out infinite alternate;
+  background: linear-gradient(319deg, rgba(59, 145, 104, 0.1) 0%, rgba(12, 140, 191, 0.2) 8%, rgba(20, 192, 169, 0.4) 16%, rgba(235, 112, 184, 0.7) 25%, rgba(90, 113, 129, 0.4) 34%, rgba(107, 88, 9, 0.2) 42%, rgba(117, 198, 60, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(47) {
-  width: 636px;
-  height: 1028px;
-  clip-path: polygon(59% 21%, 11% 14%, 3% 63%);
-  -webkit-animation: sapphireBlue 4442ms -6960ms ease-in-out infinite alternate;
-          animation: sapphireBlue 4442ms -6960ms ease-in-out infinite alternate;
-  background: linear-gradient(218deg, rgba(243, 75, 153, 0.1) 0%, rgba(152, 6, 146, 0.2) 8%, rgba(52, 162, 91, 0.4) 16%, rgba(247, 200, 129, 0.7) 25%, rgba(116, 21, 118, 0.4) 34%, rgba(216, 242, 43, 0.2) 42%, rgba(107, 44, 159, 0.1) 50%);
+  width: 592px;
+  height: 687px;
+  clip-path: polygon(35% 90%, 45% 85%, 16% 7%);
+  -webkit-animation: sapphireBlue 2986ms -1192ms ease-in-out infinite alternate;
+          animation: sapphireBlue 2986ms -1192ms ease-in-out infinite alternate;
+  background: linear-gradient(107deg, rgba(214, 20, 64, 0.1) 0%, rgba(240, 192, 78, 0.2) 8%, rgba(205, 136, 98, 0.4) 16%, rgba(130, 14, 80, 0.7) 25%, rgba(78, 56, 236, 0.4) 34%, rgba(237, 22, 130, 0.2) 42%, rgba(57, 130, 15, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(48) {
-  width: 739px;
-  height: 827px;
-  clip-path: polygon(33% 83%, 65% 55%, 71% 12%);
-  -webkit-animation: sapphireBlue 4357ms -1480ms ease-in-out infinite alternate;
-          animation: sapphireBlue 4357ms -1480ms ease-in-out infinite alternate;
-  background: linear-gradient(50deg, rgba(137, 243, 102, 0.1) 0%, rgba(184, 17, 72, 0.2) 8%, rgba(128, 187, 38, 0.4) 16%, rgba(132, 43, 107, 0.7) 25%, rgba(59, 154, 174, 0.4) 34%, rgba(70, 155, 230, 0.2) 42%, rgba(127, 152, 131, 0.1) 50%);
+  width: 642px;
+  height: 928px;
+  clip-path: polygon(11% 11%, 56% 19%, 22% 84%);
+  -webkit-animation: sapphireBlue 5073ms -8553ms ease-in-out infinite alternate;
+          animation: sapphireBlue 5073ms -8553ms ease-in-out infinite alternate;
+  background: linear-gradient(18deg, rgba(111, 117, 211, 0.1) 0%, rgba(4, 99, 13, 0.2) 8%, rgba(52, 67, 156, 0.4) 16%, rgba(206, 4, 255, 0.7) 25%, rgba(79, 162, 183, 0.4) 34%, rgba(242, 130, 44, 0.2) 42%, rgba(209, 231, 162, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(49) {
-  width: 654px;
-  height: 800px;
-  clip-path: polygon(72% 34%, 41% 36%, 66% 48%);
-  -webkit-animation: sapphireBlue 2794ms -2605ms ease-in-out infinite alternate;
-          animation: sapphireBlue 2794ms -2605ms ease-in-out infinite alternate;
-  background: linear-gradient(56deg, rgba(58, 176, 211, 0.1) 0%, rgba(97, 12, 22, 0.2) 8%, rgba(148, 255, 149, 0.4) 16%, rgba(138, 126, 12, 0.7) 25%, rgba(6, 106, 38, 0.4) 34%, rgba(29, 10, 205, 0.2) 42%, rgba(61, 239, 8, 0.1) 50%);
+  width: 536px;
+  height: 1037px;
+  clip-path: polygon(4% 26%, 34% 86%, 16% 71%);
+  -webkit-animation: sapphireBlue 2627ms -2945ms ease-in-out infinite alternate;
+          animation: sapphireBlue 2627ms -2945ms ease-in-out infinite alternate;
+  background: linear-gradient(161deg, rgba(22, 167, 114, 0.1) 0%, rgba(8, 13, 225, 0.2) 8%, rgba(92, 202, 211, 0.4) 16%, rgba(61, 31, 146, 0.7) 25%, rgba(185, 179, 178, 0.4) 34%, rgba(57, 169, 39, 0.2) 42%, rgba(55, 39, 127, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(50) {
-  width: 482px;
-  height: 654px;
-  clip-path: polygon(70% 2%, 19% 95%, 77% 24%);
-  -webkit-animation: sapphireBlue 4509ms -2995ms ease-in-out infinite alternate;
-          animation: sapphireBlue 4509ms -2995ms ease-in-out infinite alternate;
-  background: linear-gradient(159deg, rgba(95, 143, 198, 0.1) 0%, rgba(19, 223, 47, 0.2) 8%, rgba(51, 213, 136, 0.4) 16%, rgba(119, 56, 207, 0.7) 25%, rgba(10, 11, 123, 0.4) 34%, rgba(124, 147, 232, 0.2) 42%, rgba(199, 50, 97, 0.1) 50%);
+  width: 526px;
+  height: 613px;
+  clip-path: polygon(53% 51%, 39% 10%, 2% 13%);
+  -webkit-animation: sapphireBlue 3849ms -7986ms ease-in-out infinite alternate;
+          animation: sapphireBlue 3849ms -7986ms ease-in-out infinite alternate;
+  background: linear-gradient(216deg, rgba(107, 192, 186, 0.1) 0%, rgba(110, 223, 54, 0.2) 8%, rgba(182, 225, 48, 0.4) 16%, rgba(49, 204, 51, 0.7) 25%, rgba(59, 142, 91, 0.4) 34%, rgba(243, 165, 188, 0.2) 42%, rgba(121, 148, 222, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(51) {
-  width: 474px;
-  height: 1023px;
-  clip-path: polygon(98% 80%, 80% 13%, 81% 28%);
-  -webkit-animation: sapphireBlue 2667ms -67ms ease-in-out infinite alternate;
-          animation: sapphireBlue 2667ms -67ms ease-in-out infinite alternate;
-  background: linear-gradient(338deg, rgba(119, 56, 94, 0.1) 0%, rgba(106, 194, 20, 0.2) 8%, rgba(122, 51, 5, 0.4) 16%, rgba(40, 51, 43, 0.7) 25%, rgba(126, 130, 169, 0.4) 34%, rgba(233, 189, 208, 0.2) 42%, rgba(35, 173, 91, 0.1) 50%);
+  width: 586px;
+  height: 914px;
+  clip-path: polygon(59% 18%, 24% 46%, 57% 91%);
+  -webkit-animation: sapphireBlue 5576ms -1108ms ease-in-out infinite alternate;
+          animation: sapphireBlue 5576ms -1108ms ease-in-out infinite alternate;
+  background: linear-gradient(108deg, rgba(225, 15, 6, 0.1) 0%, rgba(220, 43, 219, 0.2) 8%, rgba(135, 182, 3, 0.4) 16%, rgba(212, 181, 80, 0.7) 25%, rgba(113, 91, 98, 0.4) 34%, rgba(5, 199, 83, 0.2) 42%, rgba(93, 78, 191, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(52) {
-  width: 628px;
-  height: 932px;
-  clip-path: polygon(23% 96%, 80% 19%, 3% 28%);
-  -webkit-animation: sapphireBlue 2547ms -5962ms ease-in-out infinite alternate;
-          animation: sapphireBlue 2547ms -5962ms ease-in-out infinite alternate;
-  background: linear-gradient(355deg, rgba(41, 175, 77, 0.1) 0%, rgba(88, 241, 93, 0.2) 8%, rgba(73, 18, 79, 0.4) 16%, rgba(213, 89, 148, 0.7) 25%, rgba(149, 84, 45, 0.4) 34%, rgba(210, 174, 198, 0.2) 42%, rgba(68, 238, 163, 0.1) 50%);
+  width: 638px;
+  height: 750px;
+  clip-path: polygon(58% 58%, 24% 16%, 65% 6%);
+  -webkit-animation: sapphireBlue 2805ms -2039ms ease-in-out infinite alternate;
+          animation: sapphireBlue 2805ms -2039ms ease-in-out infinite alternate;
+  background: linear-gradient(45deg, rgba(10, 29, 82, 0.1) 0%, rgba(125, 221, 247, 0.2) 8%, rgba(162, 37, 74, 0.4) 16%, rgba(140, 221, 120, 0.7) 25%, rgba(60, 196, 219, 0.4) 34%, rgba(50, 75, 185, 0.2) 42%, rgba(248, 221, 86, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(53) {
-  width: 828px;
-  height: 789px;
-  clip-path: polygon(29% 4%, 71% 26%, 86% 52%);
-  -webkit-animation: sapphireBlue 5795ms -7880ms ease-in-out infinite alternate;
-          animation: sapphireBlue 5795ms -7880ms ease-in-out infinite alternate;
-  background: linear-gradient(281deg, rgba(86, 157, 34, 0.1) 0%, rgba(253, 82, 72, 0.2) 8%, rgba(29, 210, 97, 0.4) 16%, rgba(18, 158, 167, 0.7) 25%, rgba(40, 63, 125, 0.4) 34%, rgba(24, 89, 71, 0.2) 42%, rgba(143, 215, 197, 0.1) 50%);
+  width: 436px;
+  height: 933px;
+  clip-path: polygon(94% 67%, 60% 27%, 88% 2%);
+  -webkit-animation: sapphireBlue 4911ms -6431ms ease-in-out infinite alternate;
+          animation: sapphireBlue 4911ms -6431ms ease-in-out infinite alternate;
+  background: linear-gradient(47deg, rgba(90, 243, 111, 0.1) 0%, rgba(97, 225, 217, 0.2) 8%, rgba(166, 113, 154, 0.4) 16%, rgba(187, 101, 251, 0.7) 25%, rgba(17, 247, 14, 0.4) 34%, rgba(23, 60, 61, 0.2) 42%, rgba(118, 135, 193, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(54) {
-  width: 604px;
-  height: 757px;
-  clip-path: polygon(43% 74%, 9% 59%, 83% 47%);
-  -webkit-animation: sapphireBlue 2399ms -8362ms ease-in-out infinite alternate;
-          animation: sapphireBlue 2399ms -8362ms ease-in-out infinite alternate;
-  background: linear-gradient(283deg, rgba(248, 114, 9, 0.1) 0%, rgba(94, 90, 52, 0.2) 8%, rgba(30, 158, 106, 0.4) 16%, rgba(172, 223, 181, 0.7) 25%, rgba(11, 180, 226, 0.4) 34%, rgba(7, 102, 58, 0.2) 42%, rgba(161, 197, 221, 0.1) 50%);
+  width: 801px;
+  height: 1068px;
+  clip-path: polygon(10% 94%, 14% 28%, 98% 17%);
+  -webkit-animation: sapphireBlue 2331ms -1781ms ease-in-out infinite alternate;
+          animation: sapphireBlue 2331ms -1781ms ease-in-out infinite alternate;
+  background: linear-gradient(329deg, rgba(93, 216, 98, 0.1) 0%, rgba(38, 249, 217, 0.2) 8%, rgba(252, 249, 195, 0.4) 16%, rgba(164, 175, 247, 0.7) 25%, rgba(52, 22, 243, 0.4) 34%, rgba(166, 166, 80, 0.2) 42%, rgba(250, 115, 50, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(55) {
-  width: 502px;
-  height: 1054px;
-  clip-path: polygon(56% 75%, 89% 88%, 11% 27%);
-  -webkit-animation: sapphireBlue 3395ms -2062ms ease-in-out infinite alternate;
-          animation: sapphireBlue 3395ms -2062ms ease-in-out infinite alternate;
-  background: linear-gradient(331deg, rgba(111, 197, 168, 0.1) 0%, rgba(79, 84, 228, 0.2) 8%, rgba(20, 143, 225, 0.4) 16%, rgba(32, 36, 141, 0.7) 25%, rgba(99, 16, 241, 0.4) 34%, rgba(140, 194, 45, 0.2) 42%, rgba(176, 107, 113, 0.1) 50%);
+  width: 480px;
+  height: 770px;
+  clip-path: polygon(16% 28%, 10% 44%, 35% 1%);
+  -webkit-animation: sapphireBlue 2376ms -6394ms ease-in-out infinite alternate;
+          animation: sapphireBlue 2376ms -6394ms ease-in-out infinite alternate;
+  background: linear-gradient(319deg, rgba(239, 28, 15, 0.1) 0%, rgba(111, 84, 104, 0.2) 8%, rgba(97, 46, 182, 0.4) 16%, rgba(127, 249, 51, 0.7) 25%, rgba(114, 168, 60, 0.4) 34%, rgba(69, 193, 32, 0.2) 42%, rgba(44, 237, 113, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(56) {
-  width: 568px;
-  height: 857px;
-  clip-path: polygon(1% 92%, 72% 99%, 86% 73%);
-  -webkit-animation: sapphireBlue 4182ms -6445ms ease-in-out infinite alternate;
-          animation: sapphireBlue 4182ms -6445ms ease-in-out infinite alternate;
-  background: linear-gradient(30deg, rgba(171, 21, 83, 0.1) 0%, rgba(31, 78, 52, 0.2) 8%, rgba(100, 252, 100, 0.4) 16%, rgba(22, 53, 250, 0.7) 25%, rgba(123, 142, 201, 0.4) 34%, rgba(214, 245, 221, 0.2) 42%, rgba(82, 122, 120, 0.1) 50%);
+  width: 776px;
+  height: 729px;
+  clip-path: polygon(29% 73%, 28% 76%, 51% 59%);
+  -webkit-animation: sapphireBlue 2255ms -6578ms ease-in-out infinite alternate;
+          animation: sapphireBlue 2255ms -6578ms ease-in-out infinite alternate;
+  background: linear-gradient(268deg, rgba(63, 205, 168, 0.1) 0%, rgba(80, 107, 164, 0.2) 8%, rgba(138, 68, 164, 0.4) 16%, rgba(185, 1, 26, 0.7) 25%, rgba(140, 47, 196, 0.4) 34%, rgba(14, 143, 161, 0.2) 42%, rgba(171, 49, 175, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(57) {
-  width: 647px;
-  height: 815px;
-  clip-path: polygon(44% 12%, 16% 74%, 63% 73%);
-  -webkit-animation: sapphireBlue 5147ms -9868ms ease-in-out infinite alternate;
-          animation: sapphireBlue 5147ms -9868ms ease-in-out infinite alternate;
-  background: linear-gradient(209deg, rgba(169, 233, 177, 0.1) 0%, rgba(52, 17, 212, 0.2) 8%, rgba(19, 142, 4, 0.4) 16%, rgba(194, 114, 111, 0.7) 25%, rgba(238, 74, 22, 0.4) 34%, rgba(83, 25, 117, 0.2) 42%, rgba(29, 192, 245, 0.1) 50%);
+  width: 443px;
+  height: 711px;
+  clip-path: polygon(61% 7%, 56% 72%, 90% 87%);
+  -webkit-animation: sapphireBlue 5210ms -8409ms ease-in-out infinite alternate;
+          animation: sapphireBlue 5210ms -8409ms ease-in-out infinite alternate;
+  background: linear-gradient(207deg, rgba(159, 124, 121, 0.1) 0%, rgba(59, 60, 18, 0.2) 8%, rgba(49, 248, 35, 0.4) 16%, rgba(195, 142, 199, 0.7) 25%, rgba(20, 170, 86, 0.4) 34%, rgba(2, 221, 10, 0.2) 42%, rgba(224, 233, 195, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(58) {
-  width: 743px;
-  height: 750px;
-  clip-path: polygon(7% 92%, 46% 37%, 96% 65%);
-  -webkit-animation: sapphireBlue 4587ms -1871ms ease-in-out infinite alternate;
-          animation: sapphireBlue 4587ms -1871ms ease-in-out infinite alternate;
-  background: linear-gradient(106deg, rgba(165, 79, 75, 0.1) 0%, rgba(120, 142, 232, 0.2) 8%, rgba(253, 26, 187, 0.4) 16%, rgba(159, 199, 32, 0.7) 25%, rgba(207, 159, 131, 0.4) 34%, rgba(242, 62, 8, 0.2) 42%, rgba(221, 248, 123, 0.1) 50%);
+  width: 513px;
+  height: 714px;
+  clip-path: polygon(80% 67%, 25% 70%, 59% 12%);
+  -webkit-animation: sapphireBlue 5013ms -966ms ease-in-out infinite alternate;
+          animation: sapphireBlue 5013ms -966ms ease-in-out infinite alternate;
+  background: linear-gradient(149deg, rgba(89, 148, 242, 0.1) 0%, rgba(230, 245, 111, 0.2) 8%, rgba(117, 220, 104, 0.4) 16%, rgba(215, 243, 215, 0.7) 25%, rgba(141, 69, 14, 0.4) 34%, rgba(102, 87, 94, 0.2) 42%, rgba(56, 154, 206, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(59) {
-  width: 728px;
-  height: 766px;
-  clip-path: polygon(8% 10%, 48% 65%, 77% 34%);
-  -webkit-animation: sapphireBlue 4955ms -6002ms ease-in-out infinite alternate;
-          animation: sapphireBlue 4955ms -6002ms ease-in-out infinite alternate;
-  background: linear-gradient(295deg, rgba(239, 43, 22, 0.1) 0%, rgba(92, 94, 109, 0.2) 8%, rgba(186, 162, 150, 0.4) 16%, rgba(89, 145, 77, 0.7) 25%, rgba(69, 176, 79, 0.4) 34%, rgba(224, 123, 226, 0.2) 42%, rgba(70, 148, 208, 0.1) 50%);
+  width: 832px;
+  height: 931px;
+  clip-path: polygon(26% 20%, 69% 85%, 98% 73%);
+  -webkit-animation: sapphireBlue 3413ms -9927ms ease-in-out infinite alternate;
+          animation: sapphireBlue 3413ms -9927ms ease-in-out infinite alternate;
+  background: linear-gradient(148deg, rgba(173, 76, 188, 0.1) 0%, rgba(22, 191, 181, 0.2) 8%, rgba(224, 78, 26, 0.4) 16%, rgba(147, 65, 209, 0.7) 25%, rgba(128, 34, 16, 0.4) 34%, rgba(136, 174, 72, 0.2) 42%, rgba(91, 154, 215, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(60) {
-  width: 491px;
-  height: 703px;
-  clip-path: polygon(33% 41%, 22% 66%, 11% 71%);
-  -webkit-animation: sapphireBlue 3551ms -5184ms ease-in-out infinite alternate;
-          animation: sapphireBlue 3551ms -5184ms ease-in-out infinite alternate;
-  background: linear-gradient(220deg, rgba(46, 249, 17, 0.1) 0%, rgba(184, 138, 193, 0.2) 8%, rgba(36, 166, 145, 0.4) 16%, rgba(204, 159, 83, 0.7) 25%, rgba(83, 26, 10, 0.4) 34%, rgba(226, 151, 34, 0.2) 42%, rgba(169, 116, 244, 0.1) 50%);
+  width: 564px;
+  height: 978px;
+  clip-path: polygon(20% 30%, 31% 52%, 31% 51%);
+  -webkit-animation: sapphireBlue 2800ms -2364ms ease-in-out infinite alternate;
+          animation: sapphireBlue 2800ms -2364ms ease-in-out infinite alternate;
+  background: linear-gradient(115deg, rgba(204, 90, 240, 0.1) 0%, rgba(140, 186, 31, 0.2) 8%, rgba(230, 109, 113, 0.4) 16%, rgba(49, 174, 186, 0.7) 25%, rgba(248, 11, 233, 0.4) 34%, rgba(196, 179, 29, 0.2) 42%, rgba(34, 96, 164, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(61) {
-  width: 424px;
-  height: 868px;
-  clip-path: polygon(59% 84%, 63% 11%, 24% 13%);
-  -webkit-animation: sapphireBlue 5750ms -6867ms ease-in-out infinite alternate;
-          animation: sapphireBlue 5750ms -6867ms ease-in-out infinite alternate;
-  background: linear-gradient(162deg, rgba(74, 132, 255, 0.1) 0%, rgba(79, 192, 52, 0.2) 8%, rgba(153, 176, 169, 0.4) 16%, rgba(135, 74, 143, 0.7) 25%, rgba(80, 245, 39, 0.4) 34%, rgba(49, 75, 215, 0.2) 42%, rgba(242, 30, 169, 0.1) 50%);
+  width: 529px;
+  height: 1021px;
+  clip-path: polygon(55% 79%, 29% 28%, 77% 46%);
+  -webkit-animation: sapphireBlue 3059ms -3768ms ease-in-out infinite alternate;
+          animation: sapphireBlue 3059ms -3768ms ease-in-out infinite alternate;
+  background: linear-gradient(204deg, rgba(195, 244, 247, 0.1) 0%, rgba(221, 38, 100, 0.2) 8%, rgba(234, 11, 19, 0.4) 16%, rgba(223, 246, 109, 0.7) 25%, rgba(87, 10, 49, 0.4) 34%, rgba(193, 158, 149, 0.2) 42%, rgba(200, 185, 238, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(62) {
-  width: 540px;
-  height: 867px;
-  clip-path: polygon(53% 24%, 96% 32%, 71% 44%);
-  -webkit-animation: sapphireBlue 5694ms -7320ms ease-in-out infinite alternate;
-          animation: sapphireBlue 5694ms -7320ms ease-in-out infinite alternate;
-  background: linear-gradient(89deg, rgba(99, 209, 51, 0.1) 0%, rgba(18, 72, 160, 0.2) 8%, rgba(23, 83, 92, 0.4) 16%, rgba(120, 145, 249, 0.7) 25%, rgba(247, 178, 110, 0.4) 34%, rgba(182, 111, 63, 0.2) 42%, rgba(184, 115, 65, 0.1) 50%);
+  width: 711px;
+  height: 782px;
+  clip-path: polygon(89% 75%, 98% 86%, 47% 86%);
+  -webkit-animation: sapphireBlue 4049ms -1337ms ease-in-out infinite alternate;
+          animation: sapphireBlue 4049ms -1337ms ease-in-out infinite alternate;
+  background: linear-gradient(173deg, rgba(22, 116, 214, 0.1) 0%, rgba(240, 141, 229, 0.2) 8%, rgba(225, 151, 47, 0.4) 16%, rgba(11, 9, 163, 0.7) 25%, rgba(47, 236, 155, 0.4) 34%, rgba(148, 140, 89, 0.2) 42%, rgba(98, 77, 254, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(63) {
-  width: 821px;
-  height: 677px;
-  clip-path: polygon(28% 97%, 64% 5%, 50% 70%);
-  -webkit-animation: sapphireBlue 4627ms -5061ms ease-in-out infinite alternate;
-          animation: sapphireBlue 4627ms -5061ms ease-in-out infinite alternate;
-  background: linear-gradient(285deg, rgba(176, 46, 142, 0.1) 0%, rgba(191, 84, 40, 0.2) 8%, rgba(100, 103, 16, 0.4) 16%, rgba(239, 57, 87, 0.7) 25%, rgba(234, 90, 1, 0.4) 34%, rgba(84, 20, 218, 0.2) 42%, rgba(39, 216, 35, 0.1) 50%);
+  width: 878px;
+  height: 782px;
+  clip-path: polygon(84% 7%, 56% 93%, 78% 92%);
+  -webkit-animation: sapphireBlue 2183ms -310ms ease-in-out infinite alternate;
+          animation: sapphireBlue 2183ms -310ms ease-in-out infinite alternate;
+  background: linear-gradient(66deg, rgba(125, 251, 85, 0.1) 0%, rgba(97, 241, 8, 0.2) 8%, rgba(244, 110, 139, 0.4) 16%, rgba(248, 169, 219, 0.7) 25%, rgba(158, 197, 232, 0.4) 34%, rgba(102, 16, 229, 0.2) 42%, rgba(74, 125, 166, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(64) {
-  width: 792px;
-  height: 927px;
-  clip-path: polygon(32% 47%, 63% 72%, 77% 6%);
-  -webkit-animation: sapphireBlue 2006ms -1862ms ease-in-out infinite alternate;
-          animation: sapphireBlue 2006ms -1862ms ease-in-out infinite alternate;
-  background: linear-gradient(159deg, rgba(44, 231, 173, 0.1) 0%, rgba(158, 163, 173, 0.2) 8%, rgba(254, 111, 172, 0.4) 16%, rgba(170, 89, 89, 0.7) 25%, rgba(175, 226, 139, 0.4) 34%, rgba(203, 198, 62, 0.2) 42%, rgba(148, 79, 35, 0.1) 50%);
+  width: 806px;
+  height: 992px;
+  clip-path: polygon(65% 85%, 73% 61%, 5% 18%);
+  -webkit-animation: sapphireBlue 2589ms -8977ms ease-in-out infinite alternate;
+          animation: sapphireBlue 2589ms -8977ms ease-in-out infinite alternate;
+  background: linear-gradient(259deg, rgba(133, 230, 194, 0.1) 0%, rgba(32, 94, 227, 0.2) 8%, rgba(30, 242, 72, 0.4) 16%, rgba(131, 152, 42, 0.7) 25%, rgba(216, 103, 101, 0.4) 34%, rgba(41, 73, 126, 0.2) 42%, rgba(209, 29, 164, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(65) {
-  width: 547px;
-  height: 1098px;
-  clip-path: polygon(90% 72%, 23% 84%, 50% 50%);
-  -webkit-animation: sapphireBlue 2973ms -4313ms ease-in-out infinite alternate;
-          animation: sapphireBlue 2973ms -4313ms ease-in-out infinite alternate;
-  background: linear-gradient(12deg, rgba(60, 111, 234, 0.1) 0%, rgba(252, 221, 124, 0.2) 8%, rgba(227, 88, 158, 0.4) 16%, rgba(178, 136, 32, 0.7) 25%, rgba(156, 209, 180, 0.4) 34%, rgba(12, 200, 59, 0.2) 42%, rgba(235, 253, 25, 0.1) 50%);
+  width: 688px;
+  height: 1004px;
+  clip-path: polygon(96% 33%, 63% 7%, 73% 37%);
+  -webkit-animation: sapphireBlue 2437ms -1205ms ease-in-out infinite alternate;
+          animation: sapphireBlue 2437ms -1205ms ease-in-out infinite alternate;
+  background: linear-gradient(163deg, rgba(212, 106, 159, 0.1) 0%, rgba(75, 237, 37, 0.2) 8%, rgba(249, 143, 52, 0.4) 16%, rgba(125, 182, 181, 0.7) 25%, rgba(208, 205, 48, 0.4) 34%, rgba(110, 106, 43, 0.2) 42%, rgba(195, 114, 32, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(66) {
-  width: 808px;
-  height: 774px;
-  clip-path: polygon(85% 29%, 48% 2%, 19% 67%);
-  -webkit-animation: sapphireBlue 4131ms -1271ms ease-in-out infinite alternate;
-          animation: sapphireBlue 4131ms -1271ms ease-in-out infinite alternate;
-  background: linear-gradient(227deg, rgba(27, 58, 64, 0.1) 0%, rgba(234, 60, 1, 0.2) 8%, rgba(250, 108, 63, 0.4) 16%, rgba(73, 248, 96, 0.7) 25%, rgba(217, 210, 177, 0.4) 34%, rgba(125, 163, 244, 0.2) 42%, rgba(254, 190, 39, 0.1) 50%);
+  width: 786px;
+  height: 722px;
+  clip-path: polygon(14% 71%, 81% 10%, 10% 10%);
+  -webkit-animation: sapphireBlue 3877ms -795ms ease-in-out infinite alternate;
+          animation: sapphireBlue 3877ms -795ms ease-in-out infinite alternate;
+  background: linear-gradient(130deg, rgba(86, 148, 177, 0.1) 0%, rgba(144, 74, 200, 0.2) 8%, rgba(2, 209, 36, 0.4) 16%, rgba(246, 126, 62, 0.7) 25%, rgba(154, 180, 238, 0.4) 34%, rgba(221, 104, 11, 0.2) 42%, rgba(22, 153, 32, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(67) {
-  width: 529px;
-  height: 792px;
-  clip-path: polygon(86% 37%, 18% 12%, 16% 92%);
-  -webkit-animation: sapphireBlue 5648ms -7607ms ease-in-out infinite alternate;
-          animation: sapphireBlue 5648ms -7607ms ease-in-out infinite alternate;
-  background: linear-gradient(247deg, rgba(86, 66, 114, 0.1) 0%, rgba(14, 41, 175, 0.2) 8%, rgba(95, 176, 1, 0.4) 16%, rgba(105, 6, 187, 0.7) 25%, rgba(29, 228, 237, 0.4) 34%, rgba(79, 105, 164, 0.2) 42%, rgba(192, 77, 1, 0.1) 50%);
+  width: 738px;
+  height: 825px;
+  clip-path: polygon(36% 55%, 58% 83%, 77% 57%);
+  -webkit-animation: sapphireBlue 5025ms -7630ms ease-in-out infinite alternate;
+          animation: sapphireBlue 5025ms -7630ms ease-in-out infinite alternate;
+  background: linear-gradient(319deg, rgba(237, 84, 149, 0.1) 0%, rgba(88, 116, 105, 0.2) 8%, rgba(182, 186, 102, 0.4) 16%, rgba(222, 14, 246, 0.7) 25%, rgba(230, 251, 236, 0.4) 34%, rgba(58, 172, 160, 0.2) 42%, rgba(11, 199, 161, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(68) {
-  width: 864px;
-  height: 1011px;
-  clip-path: polygon(16% 47%, 21% 61%, 40% 30%);
-  -webkit-animation: sapphireBlue 3183ms -2310ms ease-in-out infinite alternate;
-          animation: sapphireBlue 3183ms -2310ms ease-in-out infinite alternate;
-  background: linear-gradient(192deg, rgba(165, 244, 250, 0.1) 0%, rgba(87, 109, 209, 0.2) 8%, rgba(228, 54, 28, 0.4) 16%, rgba(241, 208, 207, 0.7) 25%, rgba(142, 223, 158, 0.4) 34%, rgba(136, 143, 230, 0.2) 42%, rgba(210, 82, 100, 0.1) 50%);
+  width: 480px;
+  height: 1073px;
+  clip-path: polygon(45% 27%, 92% 67%, 7% 54%);
+  -webkit-animation: sapphireBlue 4229ms -6757ms ease-in-out infinite alternate;
+          animation: sapphireBlue 4229ms -6757ms ease-in-out infinite alternate;
+  background: linear-gradient(351deg, rgba(35, 176, 25, 0.1) 0%, rgba(215, 131, 230, 0.2) 8%, rgba(138, 12, 80, 0.4) 16%, rgba(19, 95, 174, 0.7) 25%, rgba(108, 201, 194, 0.4) 34%, rgba(30, 79, 203, 0.2) 42%, rgba(202, 190, 212, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(69) {
-  width: 447px;
-  height: 618px;
-  clip-path: polygon(72% 62%, 100% 55%, 2% 17%);
-  -webkit-animation: sapphireBlue 4808ms -3355ms ease-in-out infinite alternate;
-          animation: sapphireBlue 4808ms -3355ms ease-in-out infinite alternate;
-  background: linear-gradient(193deg, rgba(15, 212, 149, 0.1) 0%, rgba(62, 108, 106, 0.2) 8%, rgba(129, 218, 75, 0.4) 16%, rgba(89, 77, 25, 0.7) 25%, rgba(116, 127, 249, 0.4) 34%, rgba(203, 216, 223, 0.2) 42%, rgba(135, 40, 81, 0.1) 50%);
+  width: 482px;
+  height: 971px;
+  clip-path: polygon(76% 28%, 44% 15%, 7% 89%);
+  -webkit-animation: sapphireBlue 3970ms -9004ms ease-in-out infinite alternate;
+          animation: sapphireBlue 3970ms -9004ms ease-in-out infinite alternate;
+  background: linear-gradient(190deg, rgba(73, 37, 232, 0.1) 0%, rgba(53, 237, 76, 0.2) 8%, rgba(105, 59, 242, 0.4) 16%, rgba(150, 93, 112, 0.7) 25%, rgba(205, 195, 207, 0.4) 34%, rgba(208, 139, 197, 0.2) 42%, rgba(195, 246, 70, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(70) {
-  width: 831px;
-  height: 960px;
-  clip-path: polygon(41% 67%, 84% 46%, 10% 81%);
-  -webkit-animation: sapphireBlue 4484ms -4264ms ease-in-out infinite alternate;
-          animation: sapphireBlue 4484ms -4264ms ease-in-out infinite alternate;
-  background: linear-gradient(91deg, rgba(178, 205, 247, 0.1) 0%, rgba(5, 251, 110, 0.2) 8%, rgba(44, 10, 253, 0.4) 16%, rgba(161, 40, 49, 0.7) 25%, rgba(234, 225, 175, 0.4) 34%, rgba(130, 73, 56, 0.2) 42%, rgba(20, 189, 88, 0.1) 50%);
+  width: 748px;
+  height: 1065px;
+  clip-path: polygon(99% 13%, 67% 15%, 67% 49%);
+  -webkit-animation: sapphireBlue 4004ms -7934ms ease-in-out infinite alternate;
+          animation: sapphireBlue 4004ms -7934ms ease-in-out infinite alternate;
+  background: linear-gradient(249deg, rgba(24, 56, 177, 0.1) 0%, rgba(59, 228, 127, 0.2) 8%, rgba(51, 170, 96, 0.4) 16%, rgba(161, 136, 191, 0.7) 25%, rgba(14, 191, 175, 0.4) 34%, rgba(63, 201, 9, 0.2) 42%, rgba(87, 186, 34, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(71) {
-  width: 755px;
-  height: 866px;
-  clip-path: polygon(15% 46%, 34% 92%, 66% 65%);
-  -webkit-animation: sapphireBlue 5810ms -3395ms ease-in-out infinite alternate;
-          animation: sapphireBlue 5810ms -3395ms ease-in-out infinite alternate;
-  background: linear-gradient(309deg, rgba(99, 87, 172, 0.1) 0%, rgba(94, 204, 54, 0.2) 8%, rgba(15, 133, 128, 0.4) 16%, rgba(201, 150, 162, 0.7) 25%, rgba(137, 146, 148, 0.4) 34%, rgba(134, 241, 38, 0.2) 42%, rgba(65, 38, 164, 0.1) 50%);
+  width: 800px;
+  height: 628px;
+  clip-path: polygon(21% 51%, 53% 71%, 24% 62%);
+  -webkit-animation: sapphireBlue 2919ms -6156ms ease-in-out infinite alternate;
+          animation: sapphireBlue 2919ms -6156ms ease-in-out infinite alternate;
+  background: linear-gradient(164deg, rgba(249, 28, 73, 0.1) 0%, rgba(88, 233, 226, 0.2) 8%, rgba(73, 17, 192, 0.4) 16%, rgba(54, 140, 210, 0.7) 25%, rgba(53, 104, 20, 0.4) 34%, rgba(252, 70, 135, 0.2) 42%, rgba(9, 240, 241, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(72) {
-  width: 704px;
-  height: 1057px;
-  clip-path: polygon(23% 52%, 89% 25%, 65% 53%);
-  -webkit-animation: sapphireBlue 4443ms -8598ms ease-in-out infinite alternate;
-          animation: sapphireBlue 4443ms -8598ms ease-in-out infinite alternate;
-  background: linear-gradient(73deg, rgba(204, 146, 105, 0.1) 0%, rgba(153, 201, 169, 0.2) 8%, rgba(51, 129, 140, 0.4) 16%, rgba(213, 58, 192, 0.7) 25%, rgba(147, 17, 1, 0.4) 34%, rgba(34, 229, 41, 0.2) 42%, rgba(57, 250, 218, 0.1) 50%);
+  width: 668px;
+  height: 646px;
+  clip-path: polygon(20% 75%, 61% 21%, 74% 36%);
+  -webkit-animation: sapphireBlue 3311ms -4267ms ease-in-out infinite alternate;
+          animation: sapphireBlue 3311ms -4267ms ease-in-out infinite alternate;
+  background: linear-gradient(100deg, rgba(74, 124, 25, 0.1) 0%, rgba(100, 143, 41, 0.2) 8%, rgba(16, 122, 117, 0.4) 16%, rgba(148, 116, 212, 0.7) 25%, rgba(95, 145, 161, 0.4) 34%, rgba(254, 217, 160, 0.2) 42%, rgba(146, 54, 247, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(73) {
-  width: 460px;
-  height: 1018px;
-  clip-path: polygon(12% 90%, 98% 26%, 19% 72%);
-  -webkit-animation: sapphireBlue 2873ms -4268ms ease-in-out infinite alternate;
-          animation: sapphireBlue 2873ms -4268ms ease-in-out infinite alternate;
-  background: linear-gradient(98deg, rgba(163, 7, 119, 0.1) 0%, rgba(201, 107, 23, 0.2) 8%, rgba(76, 89, 191, 0.4) 16%, rgba(205, 161, 95, 0.7) 25%, rgba(42, 93, 89, 0.4) 34%, rgba(72, 138, 185, 0.2) 42%, rgba(73, 157, 63, 0.1) 50%);
+  width: 733px;
+  height: 708px;
+  clip-path: polygon(88% 29%, 86% 99%, 43% 12%);
+  -webkit-animation: sapphireBlue 4823ms -7944ms ease-in-out infinite alternate;
+          animation: sapphireBlue 4823ms -7944ms ease-in-out infinite alternate;
+  background: linear-gradient(80deg, rgba(90, 183, 5, 0.1) 0%, rgba(19, 190, 247, 0.2) 8%, rgba(178, 248, 227, 0.4) 16%, rgba(181, 137, 206, 0.7) 25%, rgba(82, 252, 128, 0.4) 34%, rgba(205, 184, 151, 0.2) 42%, rgba(207, 208, 202, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(74) {
-  width: 519px;
-  height: 611px;
-  clip-path: polygon(79% 99%, 8% 43%, 13% 93%);
-  -webkit-animation: sapphireBlue 4028ms -2698ms ease-in-out infinite alternate;
-          animation: sapphireBlue 4028ms -2698ms ease-in-out infinite alternate;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(208, 7, 241, 0.1)), color-stop(8%, rgba(9, 223, 181, 0.2)), color-stop(16%, rgba(241, 79, 166, 0.4)), color-stop(25%, rgba(125, 210, 136, 0.7)), color-stop(34%, rgba(231, 54, 108, 0.4)), color-stop(42%, rgba(228, 113, 210, 0.2)), color-stop(50%, rgba(115, 124, 147, 0.1)));
-  background: linear-gradient(180deg, rgba(208, 7, 241, 0.1) 0%, rgba(9, 223, 181, 0.2) 8%, rgba(241, 79, 166, 0.4) 16%, rgba(125, 210, 136, 0.7) 25%, rgba(231, 54, 108, 0.4) 34%, rgba(228, 113, 210, 0.2) 42%, rgba(115, 124, 147, 0.1) 50%);
+  width: 546px;
+  height: 763px;
+  clip-path: polygon(99% 56%, 14% 17%, 72% 88%);
+  -webkit-animation: sapphireBlue 4022ms -2603ms ease-in-out infinite alternate;
+          animation: sapphireBlue 4022ms -2603ms ease-in-out infinite alternate;
+  background: linear-gradient(39deg, rgba(42, 55, 232, 0.1) 0%, rgba(108, 164, 253, 0.2) 8%, rgba(96, 238, 175, 0.4) 16%, rgba(202, 64, 187, 0.7) 25%, rgba(160, 252, 20, 0.4) 34%, rgba(233, 42, 155, 0.2) 42%, rgba(25, 183, 226, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(75) {
-  width: 541px;
-  height: 926px;
-  clip-path: polygon(31% 10%, 49% 31%, 55% 12%);
-  -webkit-animation: sapphireBlue 4928ms -8632ms ease-in-out infinite alternate;
-          animation: sapphireBlue 4928ms -8632ms ease-in-out infinite alternate;
-  background: linear-gradient(322deg, rgba(223, 128, 210, 0.1) 0%, rgba(92, 165, 65, 0.2) 8%, rgba(106, 56, 166, 0.4) 16%, rgba(138, 53, 125, 0.7) 25%, rgba(93, 254, 167, 0.4) 34%, rgba(66, 185, 119, 0.2) 42%, rgba(98, 198, 164, 0.1) 50%);
+  width: 819px;
+  height: 618px;
+  clip-path: polygon(70% 21%, 8% 1%, 14% 22%);
+  -webkit-animation: sapphireBlue 2760ms -145ms ease-in-out infinite alternate;
+          animation: sapphireBlue 2760ms -145ms ease-in-out infinite alternate;
+  background: linear-gradient(251deg, rgba(154, 11, 138, 0.1) 0%, rgba(37, 44, 165, 0.2) 8%, rgba(10, 105, 122, 0.4) 16%, rgba(136, 118, 141, 0.7) 25%, rgba(211, 207, 203, 0.4) 34%, rgba(10, 14, 249, 0.2) 42%, rgba(63, 114, 22, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(76) {
-  width: 825px;
-  height: 679px;
-  clip-path: polygon(26% 41%, 87% 94%, 63% 43%);
-  -webkit-animation: sapphireBlue 5437ms -663ms ease-in-out infinite alternate;
-          animation: sapphireBlue 5437ms -663ms ease-in-out infinite alternate;
-  background: linear-gradient(287deg, rgba(155, 158, 10, 0.1) 0%, rgba(120, 235, 63, 0.2) 8%, rgba(208, 75, 8, 0.4) 16%, rgba(252, 52, 232, 0.7) 25%, rgba(159, 53, 98, 0.4) 34%, rgba(9, 244, 74, 0.2) 42%, rgba(120, 42, 37, 0.1) 50%);
+  width: 476px;
+  height: 1035px;
+  clip-path: polygon(47% 6%, 60% 4%, 92% 99%);
+  -webkit-animation: sapphireBlue 4456ms -4892ms ease-in-out infinite alternate;
+          animation: sapphireBlue 4456ms -4892ms ease-in-out infinite alternate;
+  background: linear-gradient(317deg, rgba(87, 197, 45, 0.1) 0%, rgba(90, 164, 229, 0.2) 8%, rgba(71, 123, 200, 0.4) 16%, rgba(233, 159, 208, 0.7) 25%, rgba(139, 247, 62, 0.4) 34%, rgba(19, 208, 96, 0.2) 42%, rgba(48, 200, 119, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(77) {
-  width: 494px;
-  height: 893px;
-  clip-path: polygon(83% 27%, 82% 2%, 34% 81%);
-  -webkit-animation: sapphireBlue 5184ms -8907ms ease-in-out infinite alternate;
-          animation: sapphireBlue 5184ms -8907ms ease-in-out infinite alternate;
-  background: linear-gradient(206deg, rgba(32, 5, 248, 0.1) 0%, rgba(41, 90, 158, 0.2) 8%, rgba(130, 11, 65, 0.4) 16%, rgba(210, 135, 197, 0.7) 25%, rgba(151, 184, 102, 0.4) 34%, rgba(254, 248, 143, 0.2) 42%, rgba(131, 202, 92, 0.1) 50%);
+  width: 776px;
+  height: 786px;
+  clip-path: polygon(55% 28%, 45% 93%, 71% 94%);
+  -webkit-animation: sapphireBlue 2424ms -1452ms ease-in-out infinite alternate;
+          animation: sapphireBlue 2424ms -1452ms ease-in-out infinite alternate;
+  background: linear-gradient(232deg, rgba(217, 139, 243, 0.1) 0%, rgba(79, 162, 146, 0.2) 8%, rgba(53, 64, 53, 0.4) 16%, rgba(102, 17, 168, 0.7) 25%, rgba(179, 250, 234, 0.4) 34%, rgba(1, 176, 80, 0.2) 42%, rgba(137, 88, 181, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(78) {
-  width: 766px;
-  height: 614px;
-  clip-path: polygon(88% 29%, 11% 31%, 25% 58%);
-  -webkit-animation: sapphireBlue 3794ms -3497ms ease-in-out infinite alternate;
-          animation: sapphireBlue 3794ms -3497ms ease-in-out infinite alternate;
-  background: linear-gradient(216deg, rgba(157, 230, 8, 0.1) 0%, rgba(90, 189, 61, 0.2) 8%, rgba(161, 194, 235, 0.4) 16%, rgba(160, 255, 70, 0.7) 25%, rgba(128, 125, 75, 0.4) 34%, rgba(85, 36, 146, 0.2) 42%, rgba(156, 32, 8, 0.1) 50%);
+  width: 863px;
+  height: 768px;
+  clip-path: polygon(84% 21%, 72% 50%, 96% 83%);
+  -webkit-animation: sapphireBlue 2318ms -632ms ease-in-out infinite alternate;
+          animation: sapphireBlue 2318ms -632ms ease-in-out infinite alternate;
+  background: linear-gradient(168deg, rgba(115, 120, 181, 0.1) 0%, rgba(156, 213, 252, 0.2) 8%, rgba(71, 14, 240, 0.4) 16%, rgba(146, 110, 130, 0.7) 25%, rgba(212, 24, 247, 0.4) 34%, rgba(255, 221, 152, 0.2) 42%, rgba(98, 33, 165, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(79) {
-  width: 801px;
-  height: 626px;
-  clip-path: polygon(5% 80%, 23% 10%, 88% 71%);
-  -webkit-animation: sapphireBlue 4528ms -7269ms ease-in-out infinite alternate;
-          animation: sapphireBlue 4528ms -7269ms ease-in-out infinite alternate;
-  background: linear-gradient(312deg, rgba(226, 157, 22, 0.1) 0%, rgba(244, 135, 87, 0.2) 8%, rgba(78, 188, 150, 0.4) 16%, rgba(126, 118, 135, 0.7) 25%, rgba(210, 253, 95, 0.4) 34%, rgba(69, 197, 160, 0.2) 42%, rgba(160, 144, 213, 0.1) 50%);
+  width: 415px;
+  height: 1049px;
+  clip-path: polygon(61% 57%, 16% 78%, 33% 78%);
+  -webkit-animation: sapphireBlue 4164ms -4316ms ease-in-out infinite alternate;
+          animation: sapphireBlue 4164ms -4316ms ease-in-out infinite alternate;
+  background: linear-gradient(258deg, rgba(143, 165, 153, 0.1) 0%, rgba(136, 57, 81, 0.2) 8%, rgba(226, 38, 218, 0.4) 16%, rgba(36, 241, 227, 0.7) 25%, rgba(81, 98, 245, 0.4) 34%, rgba(94, 37, 248, 0.2) 42%, rgba(72, 30, 30, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(80) {
-  width: 654px;
-  height: 650px;
-  clip-path: polygon(36% 40%, 86% 3%, 74% 67%);
-  -webkit-animation: sapphireBlue 3538ms -1984ms ease-in-out infinite alternate;
-          animation: sapphireBlue 3538ms -1984ms ease-in-out infinite alternate;
-  background: linear-gradient(195deg, rgba(158, 153, 174, 0.1) 0%, rgba(149, 28, 121, 0.2) 8%, rgba(244, 21, 77, 0.4) 16%, rgba(164, 244, 109, 0.7) 25%, rgba(65, 227, 127, 0.4) 34%, rgba(131, 44, 107, 0.2) 42%, rgba(101, 57, 180, 0.1) 50%);
+  width: 415px;
+  height: 667px;
+  clip-path: polygon(86% 89%, 95% 69%, 13% 49%);
+  -webkit-animation: sapphireBlue 4237ms -1082ms ease-in-out infinite alternate;
+          animation: sapphireBlue 4237ms -1082ms ease-in-out infinite alternate;
+  background: linear-gradient(78deg, rgba(178, 42, 125, 0.1) 0%, rgba(30, 89, 152, 0.2) 8%, rgba(64, 25, 87, 0.4) 16%, rgba(246, 103, 128, 0.7) 25%, rgba(224, 137, 9, 0.4) 34%, rgba(113, 24, 232, 0.2) 42%, rgba(185, 230, 178, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(81) {
-  width: 852px;
-  height: 1089px;
-  clip-path: polygon(55% 89%, 100% 24%, 48% 41%);
-  -webkit-animation: sapphireBlue 4125ms -4597ms ease-in-out infinite alternate;
-          animation: sapphireBlue 4125ms -4597ms ease-in-out infinite alternate;
-  background: linear-gradient(260deg, rgba(82, 47, 113, 0.1) 0%, rgba(182, 128, 37, 0.2) 8%, rgba(188, 85, 161, 0.4) 16%, rgba(162, 95, 115, 0.7) 25%, rgba(125, 222, 10, 0.4) 34%, rgba(247, 30, 62, 0.2) 42%, rgba(58, 253, 6, 0.1) 50%);
+  width: 771px;
+  height: 931px;
+  clip-path: polygon(30% 56%, 59% 30%, 99% 42%);
+  -webkit-animation: sapphireBlue 5746ms -8835ms ease-in-out infinite alternate;
+          animation: sapphireBlue 5746ms -8835ms ease-in-out infinite alternate;
+  background: linear-gradient(25deg, rgba(59, 28, 149, 0.1) 0%, rgba(104, 135, 245, 0.2) 8%, rgba(54, 174, 140, 0.4) 16%, rgba(37, 114, 152, 0.7) 25%, rgba(138, 136, 112, 0.4) 34%, rgba(133, 41, 60, 0.2) 42%, rgba(114, 36, 205, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(82) {
-  width: 601px;
-  height: 747px;
-  clip-path: polygon(79% 98%, 10% 39%, 73% 47%);
-  -webkit-animation: sapphireBlue 2173ms -6907ms ease-in-out infinite alternate;
-          animation: sapphireBlue 2173ms -6907ms ease-in-out infinite alternate;
-  background: linear-gradient(82deg, rgba(240, 82, 202, 0.1) 0%, rgba(170, 99, 208, 0.2) 8%, rgba(102, 250, 43, 0.4) 16%, rgba(253, 111, 166, 0.7) 25%, rgba(254, 135, 192, 0.4) 34%, rgba(7, 135, 172, 0.2) 42%, rgba(18, 203, 82, 0.1) 50%);
+  width: 671px;
+  height: 691px;
+  clip-path: polygon(18% 67%, 41% 33%, 31% 69%);
+  -webkit-animation: sapphireBlue 4746ms -6216ms ease-in-out infinite alternate;
+          animation: sapphireBlue 4746ms -6216ms ease-in-out infinite alternate;
+  background: linear-gradient(50deg, rgba(98, 167, 251, 0.1) 0%, rgba(191, 61, 124, 0.2) 8%, rgba(92, 163, 19, 0.4) 16%, rgba(239, 74, 116, 0.7) 25%, rgba(224, 19, 76, 0.4) 34%, rgba(110, 182, 73, 0.2) 42%, rgba(5, 12, 154, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(83) {
-  width: 502px;
-  height: 1079px;
-  clip-path: polygon(23% 84%, 73% 22%, 85% 71%);
-  -webkit-animation: sapphireBlue 3606ms -8399ms ease-in-out infinite alternate;
-          animation: sapphireBlue 3606ms -8399ms ease-in-out infinite alternate;
-  background: linear-gradient(358deg, rgba(140, 72, 161, 0.1) 0%, rgba(212, 12, 215, 0.2) 8%, rgba(3, 88, 5, 0.4) 16%, rgba(115, 211, 191, 0.7) 25%, rgba(150, 14, 89, 0.4) 34%, rgba(17, 11, 44, 0.2) 42%, rgba(224, 134, 231, 0.1) 50%);
+  width: 835px;
+  height: 613px;
+  clip-path: polygon(47% 39%, 39% 32%, 27% 29%);
+  -webkit-animation: sapphireBlue 5690ms -5756ms ease-in-out infinite alternate;
+          animation: sapphireBlue 5690ms -5756ms ease-in-out infinite alternate;
+  background: linear-gradient(317deg, rgba(115, 135, 56, 0.1) 0%, rgba(187, 196, 59, 0.2) 8%, rgba(3, 254, 226, 0.4) 16%, rgba(40, 138, 123, 0.7) 25%, rgba(17, 2, 234, 0.4) 34%, rgba(206, 147, 21, 0.2) 42%, rgba(58, 9, 134, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(84) {
-  width: 660px;
-  height: 618px;
-  clip-path: polygon(41% 76%, 58% 9%, 79% 4%);
-  -webkit-animation: sapphireBlue 2245ms -9735ms ease-in-out infinite alternate;
-          animation: sapphireBlue 2245ms -9735ms ease-in-out infinite alternate;
-  background: linear-gradient(112deg, rgba(231, 82, 130, 0.1) 0%, rgba(149, 7, 103, 0.2) 8%, rgba(12, 128, 64, 0.4) 16%, rgba(32, 81, 226, 0.7) 25%, rgba(219, 68, 218, 0.4) 34%, rgba(191, 220, 97, 0.2) 42%, rgba(35, 20, 111, 0.1) 50%);
+  width: 546px;
+  height: 967px;
+  clip-path: polygon(18% 38%, 32% 31%, 23% 75%);
+  -webkit-animation: sapphireBlue 3153ms -2414ms ease-in-out infinite alternate;
+          animation: sapphireBlue 3153ms -2414ms ease-in-out infinite alternate;
+  background: linear-gradient(27deg, rgba(198, 103, 93, 0.1) 0%, rgba(82, 152, 89, 0.2) 8%, rgba(94, 42, 243, 0.4) 16%, rgba(88, 224, 62, 0.7) 25%, rgba(122, 167, 79, 0.4) 34%, rgba(170, 85, 192, 0.2) 42%, rgba(35, 255, 200, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(85) {
-  width: 866px;
-  height: 681px;
-  clip-path: polygon(23% 98%, 40% 41%, 69% 53%);
-  -webkit-animation: sapphireBlue 2138ms -5688ms ease-in-out infinite alternate;
-          animation: sapphireBlue 2138ms -5688ms ease-in-out infinite alternate;
-  background: linear-gradient(69deg, rgba(20, 46, 199, 0.1) 0%, rgba(239, 184, 116, 0.2) 8%, rgba(181, 48, 255, 0.4) 16%, rgba(173, 78, 189, 0.7) 25%, rgba(205, 29, 48, 0.4) 34%, rgba(173, 205, 154, 0.2) 42%, rgba(4, 214, 54, 0.1) 50%);
+  width: 894px;
+  height: 1059px;
+  clip-path: polygon(37% 39%, 6% 7%, 31% 4%);
+  -webkit-animation: sapphireBlue 3157ms -5455ms ease-in-out infinite alternate;
+          animation: sapphireBlue 3157ms -5455ms ease-in-out infinite alternate;
+  background: linear-gradient(135deg, rgba(185, 148, 111, 0.1) 0%, rgba(64, 101, 150, 0.2) 8%, rgba(188, 93, 227, 0.4) 16%, rgba(60, 191, 127, 0.7) 25%, rgba(35, 205, 232, 0.4) 34%, rgba(140, 220, 178, 0.2) 42%, rgba(101, 31, 228, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(86) {
-  width: 605px;
-  height: 727px;
-  clip-path: polygon(77% 43%, 91% 35%, 62% 21%);
-  -webkit-animation: sapphireBlue 3283ms -2993ms ease-in-out infinite alternate;
-          animation: sapphireBlue 3283ms -2993ms ease-in-out infinite alternate;
-  background: linear-gradient(45deg, rgba(252, 253, 40, 0.1) 0%, rgba(112, 172, 224, 0.2) 8%, rgba(35, 179, 100, 0.4) 16%, rgba(62, 131, 32, 0.7) 25%, rgba(121, 129, 183, 0.4) 34%, rgba(176, 244, 73, 0.2) 42%, rgba(242, 221, 205, 0.1) 50%);
+  width: 863px;
+  height: 1081px;
+  clip-path: polygon(42% 77%, 6% 84%, 61% 69%);
+  -webkit-animation: sapphireBlue 2382ms -4375ms ease-in-out infinite alternate;
+          animation: sapphireBlue 2382ms -4375ms ease-in-out infinite alternate;
+  background: linear-gradient(347deg, rgba(184, 71, 32, 0.1) 0%, rgba(51, 61, 194, 0.2) 8%, rgba(36, 234, 125, 0.4) 16%, rgba(202, 122, 70, 0.7) 25%, rgba(12, 234, 192, 0.4) 34%, rgba(197, 108, 103, 0.2) 42%, rgba(207, 188, 51, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(87) {
-  width: 440px;
-  height: 1076px;
-  clip-path: polygon(15% 87%, 57% 99%, 51% 1%);
-  -webkit-animation: sapphireBlue 2295ms -5641ms ease-in-out infinite alternate;
-          animation: sapphireBlue 2295ms -5641ms ease-in-out infinite alternate;
-  background: linear-gradient(25deg, rgba(90, 44, 186, 0.1) 0%, rgba(14, 177, 162, 0.2) 8%, rgba(242, 162, 214, 0.4) 16%, rgba(70, 185, 131, 0.7) 25%, rgba(20, 187, 155, 0.4) 34%, rgba(200, 9, 65, 0.2) 42%, rgba(14, 26, 175, 0.1) 50%);
+  width: 642px;
+  height: 947px;
+  clip-path: polygon(77% 10%, 3% 30%, 32% 62%);
+  -webkit-animation: sapphireBlue 5495ms -7733ms ease-in-out infinite alternate;
+          animation: sapphireBlue 5495ms -7733ms ease-in-out infinite alternate;
+  background: linear-gradient(199deg, rgba(98, 118, 15, 0.1) 0%, rgba(212, 181, 178, 0.2) 8%, rgba(210, 204, 45, 0.4) 16%, rgba(110, 230, 228, 0.7) 25%, rgba(200, 156, 147, 0.4) 34%, rgba(55, 163, 240, 0.2) 42%, rgba(38, 20, 141, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(88) {
-  width: 848px;
-  height: 922px;
-  clip-path: polygon(1% 94%, 90% 53%, 89% 46%);
-  -webkit-animation: sapphireBlue 4972ms -5192ms ease-in-out infinite alternate;
-          animation: sapphireBlue 4972ms -5192ms ease-in-out infinite alternate;
-  background: linear-gradient(299deg, rgba(221, 245, 56, 0.1) 0%, rgba(245, 135, 205, 0.2) 8%, rgba(247, 40, 76, 0.4) 16%, rgba(98, 195, 35, 0.7) 25%, rgba(249, 153, 105, 0.4) 34%, rgba(216, 231, 97, 0.2) 42%, rgba(100, 224, 214, 0.1) 50%);
+  width: 451px;
+  height: 646px;
+  clip-path: polygon(40% 63%, 64% 53%, 56% 71%);
+  -webkit-animation: sapphireBlue 5152ms -711ms ease-in-out infinite alternate;
+          animation: sapphireBlue 5152ms -711ms ease-in-out infinite alternate;
+  background: linear-gradient(80deg, rgba(242, 4, 15, 0.1) 0%, rgba(199, 122, 29, 0.2) 8%, rgba(16, 143, 68, 0.4) 16%, rgba(176, 25, 111, 0.7) 25%, rgba(54, 55, 77, 0.4) 34%, rgba(66, 198, 214, 0.2) 42%, rgba(144, 74, 130, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(89) {
-  width: 610px;
-  height: 795px;
-  clip-path: polygon(46% 31%, 5% 29%, 72% 48%);
-  -webkit-animation: sapphireBlue 2680ms -9405ms ease-in-out infinite alternate;
-          animation: sapphireBlue 2680ms -9405ms ease-in-out infinite alternate;
-  background: linear-gradient(107deg, rgba(190, 189, 25, 0.1) 0%, rgba(190, 82, 118, 0.2) 8%, rgba(2, 238, 13, 0.4) 16%, rgba(6, 38, 118, 0.7) 25%, rgba(181, 127, 110, 0.4) 34%, rgba(225, 117, 79, 0.2) 42%, rgba(236, 96, 98, 0.1) 50%);
+  width: 707px;
+  height: 1046px;
+  clip-path: polygon(79% 64%, 14% 10%, 7% 26%);
+  -webkit-animation: sapphireBlue 5110ms -8731ms ease-in-out infinite alternate;
+          animation: sapphireBlue 5110ms -8731ms ease-in-out infinite alternate;
+  background: linear-gradient(119deg, rgba(90, 227, 123, 0.1) 0%, rgba(220, 52, 117, 0.2) 8%, rgba(2, 165, 25, 0.4) 16%, rgba(9, 101, 102, 0.7) 25%, rgba(120, 153, 94, 0.4) 34%, rgba(195, 220, 172, 0.2) 42%, rgba(64, 218, 191, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(90) {
-  width: 819px;
-  height: 940px;
-  clip-path: polygon(24% 90%, 1% 22%, 94% 18%);
-  -webkit-animation: sapphireBlue 3959ms -663ms ease-in-out infinite alternate;
-          animation: sapphireBlue 3959ms -663ms ease-in-out infinite alternate;
-  background: linear-gradient(155deg, rgba(175, 226, 242, 0.1) 0%, rgba(132, 185, 196, 0.2) 8%, rgba(172, 114, 101, 0.4) 16%, rgba(229, 45, 212, 0.7) 25%, rgba(241, 94, 233, 0.4) 34%, rgba(70, 204, 83, 0.2) 42%, rgba(190, 85, 16, 0.1) 50%);
+  width: 846px;
+  height: 906px;
+  clip-path: polygon(74% 30%, 29% 76%, 75% 23%);
+  -webkit-animation: sapphireBlue 3342ms -459ms ease-in-out infinite alternate;
+          animation: sapphireBlue 3342ms -459ms ease-in-out infinite alternate;
+  background: linear-gradient(115deg, rgba(149, 171, 165, 0.1) 0%, rgba(99, 183, 109, 0.2) 8%, rgba(155, 83, 229, 0.4) 16%, rgba(254, 68, 85, 0.7) 25%, rgba(220, 244, 207, 0.4) 34%, rgba(124, 250, 145, 0.2) 42%, rgba(152, 56, 112, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(91) {
-  width: 511px;
-  height: 702px;
-  clip-path: polygon(84% 9%, 76% 41%, 70% 56%);
-  -webkit-animation: sapphireBlue 4146ms -6018ms ease-in-out infinite alternate;
-          animation: sapphireBlue 4146ms -6018ms ease-in-out infinite alternate;
-  background: linear-gradient(158deg, rgba(64, 223, 165, 0.1) 0%, rgba(94, 6, 78, 0.2) 8%, rgba(131, 106, 54, 0.4) 16%, rgba(157, 223, 206, 0.7) 25%, rgba(100, 186, 153, 0.4) 34%, rgba(45, 241, 6, 0.2) 42%, rgba(175, 110, 6, 0.1) 50%);
+  width: 714px;
+  height: 934px;
+  clip-path: polygon(33% 53%, 100% 95%, 21% 88%);
+  -webkit-animation: sapphireBlue 2135ms -7044ms ease-in-out infinite alternate;
+          animation: sapphireBlue 2135ms -7044ms ease-in-out infinite alternate;
+  background: linear-gradient(197deg, rgba(80, 193, 106, 0.1) 0%, rgba(127, 171, 34, 0.2) 8%, rgba(229, 186, 218, 0.4) 16%, rgba(189, 247, 252, 0.7) 25%, rgba(163, 171, 164, 0.4) 34%, rgba(251, 81, 115, 0.2) 42%, rgba(242, 227, 64, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(92) {
-  width: 807px;
-  height: 996px;
-  clip-path: polygon(82% 45%, 17% 12%, 2% 3%);
-  -webkit-animation: sapphireBlue 5160ms -120ms ease-in-out infinite alternate;
-          animation: sapphireBlue 5160ms -120ms ease-in-out infinite alternate;
-  background: linear-gradient(146deg, rgba(85, 49, 211, 0.1) 0%, rgba(5, 11, 87, 0.2) 8%, rgba(238, 44, 105, 0.4) 16%, rgba(33, 12, 68, 0.7) 25%, rgba(241, 233, 12, 0.4) 34%, rgba(61, 168, 73, 0.2) 42%, rgba(247, 204, 121, 0.1) 50%);
+  width: 437px;
+  height: 917px;
+  clip-path: polygon(1% 58%, 9% 39%, 74% 93%);
+  -webkit-animation: sapphireBlue 5860ms -7016ms ease-in-out infinite alternate;
+          animation: sapphireBlue 5860ms -7016ms ease-in-out infinite alternate;
+  background: linear-gradient(192deg, rgba(225, 154, 114, 0.1) 0%, rgba(133, 5, 65, 0.2) 8%, rgba(225, 170, 6, 0.4) 16%, rgba(211, 36, 204, 0.7) 25%, rgba(165, 202, 19, 0.4) 34%, rgba(206, 135, 179, 0.2) 42%, rgba(50, 62, 133, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(93) {
-  width: 401px;
-  height: 1051px;
-  clip-path: polygon(2% 19%, 98% 89%, 78% 65%);
-  -webkit-animation: sapphireBlue 2261ms -7723ms ease-in-out infinite alternate;
-          animation: sapphireBlue 2261ms -7723ms ease-in-out infinite alternate;
-  background: linear-gradient(94deg, rgba(158, 234, 72, 0.1) 0%, rgba(156, 77, 87, 0.2) 8%, rgba(147, 226, 60, 0.4) 16%, rgba(199, 3, 100, 0.7) 25%, rgba(10, 145, 87, 0.4) 34%, rgba(186, 116, 110, 0.2) 42%, rgba(166, 201, 154, 0.1) 50%);
+  width: 778px;
+  height: 1069px;
+  clip-path: polygon(38% 73%, 37% 78%, 35% 14%);
+  -webkit-animation: sapphireBlue 5359ms -6650ms ease-in-out infinite alternate;
+          animation: sapphireBlue 5359ms -6650ms ease-in-out infinite alternate;
+  background: linear-gradient(65deg, rgba(239, 126, 91, 0.1) 0%, rgba(92, 20, 1, 0.2) 8%, rgba(51, 51, 138, 0.4) 16%, rgba(65, 116, 235, 0.7) 25%, rgba(104, 178, 11, 0.4) 34%, rgba(16, 53, 135, 0.2) 42%, rgba(89, 200, 146, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(94) {
-  width: 894px;
-  height: 766px;
-  clip-path: polygon(47% 45%, 13% 18%, 96% 91%);
-  -webkit-animation: sapphireBlue 2335ms -2449ms ease-in-out infinite alternate;
-          animation: sapphireBlue 2335ms -2449ms ease-in-out infinite alternate;
-  background: linear-gradient(199deg, rgba(51, 113, 2, 0.1) 0%, rgba(138, 162, 165, 0.2) 8%, rgba(14, 67, 39, 0.4) 16%, rgba(111, 205, 227, 0.7) 25%, rgba(52, 218, 211, 0.4) 34%, rgba(130, 164, 192, 0.2) 42%, rgba(154, 63, 29, 0.1) 50%);
+  width: 512px;
+  height: 1063px;
+  clip-path: polygon(81% 94%, 92% 68%, 89% 60%);
+  -webkit-animation: sapphireBlue 4170ms -2610ms ease-in-out infinite alternate;
+          animation: sapphireBlue 4170ms -2610ms ease-in-out infinite alternate;
+  background: linear-gradient(201deg, rgba(108, 138, 242, 0.1) 0%, rgba(249, 64, 119, 0.2) 8%, rgba(219, 57, 143, 0.4) 16%, rgba(15, 72, 103, 0.7) 25%, rgba(147, 229, 238, 0.4) 34%, rgba(34, 81, 247, 0.2) 42%, rgba(104, 180, 64, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(95) {
-  width: 843px;
-  height: 804px;
-  clip-path: polygon(97% 10%, 22% 96%, 13% 14%);
-  -webkit-animation: sapphireBlue 2755ms -1498ms ease-in-out infinite alternate;
-          animation: sapphireBlue 2755ms -1498ms ease-in-out infinite alternate;
-  background: linear-gradient(96deg, rgba(125, 131, 236, 0.1) 0%, rgba(74, 186, 56, 0.2) 8%, rgba(13, 64, 179, 0.4) 16%, rgba(58, 12, 20, 0.7) 25%, rgba(255, 99, 212, 0.4) 34%, rgba(51, 197, 70, 0.2) 42%, rgba(177, 210, 38, 0.1) 50%);
+  width: 684px;
+  height: 684px;
+  clip-path: polygon(97% 82%, 30% 16%, 51% 53%);
+  -webkit-animation: sapphireBlue 5659ms -4783ms ease-in-out infinite alternate;
+          animation: sapphireBlue 5659ms -4783ms ease-in-out infinite alternate;
+  background: linear-gradient(103deg, rgba(143, 47, 41, 0.1) 0%, rgba(82, 217, 230, 0.2) 8%, rgba(96, 221, 20, 0.4) 16%, rgba(111, 165, 182, 0.7) 25%, rgba(25, 108, 144, 0.4) 34%, rgba(21, 200, 116, 0.2) 42%, rgba(235, 19, 233, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(96) {
-  width: 829px;
-  height: 816px;
-  clip-path: polygon(6% 59%, 9% 79%, 28% 78%);
-  -webkit-animation: sapphireBlue 3518ms -4863ms ease-in-out infinite alternate;
-          animation: sapphireBlue 3518ms -4863ms ease-in-out infinite alternate;
-  background: linear-gradient(6deg, rgba(63, 86, 73, 0.1) 0%, rgba(44, 136, 250, 0.2) 8%, rgba(95, 29, 105, 0.4) 16%, rgba(74, 108, 238, 0.7) 25%, rgba(176, 94, 6, 0.4) 34%, rgba(252, 243, 55, 0.2) 42%, rgba(232, 64, 100, 0.1) 50%);
+  width: 849px;
+  height: 907px;
+  clip-path: polygon(88% 19%, 42% 39%, 29% 4%);
+  -webkit-animation: sapphireBlue 3334ms -8791ms ease-in-out infinite alternate;
+          animation: sapphireBlue 3334ms -8791ms ease-in-out infinite alternate;
+  background: linear-gradient(65deg, rgba(243, 189, 203, 0.1) 0%, rgba(216, 57, 219, 0.2) 8%, rgba(120, 125, 235, 0.4) 16%, rgba(92, 20, 170, 0.7) 25%, rgba(180, 161, 107, 0.4) 34%, rgba(216, 216, 110, 0.2) 42%, rgba(111, 242, 117, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(97) {
-  width: 839px;
-  height: 1098px;
-  clip-path: polygon(22% 76%, 41% 83%, 37% 49%);
-  -webkit-animation: sapphireBlue 5461ms -9742ms ease-in-out infinite alternate;
-          animation: sapphireBlue 5461ms -9742ms ease-in-out infinite alternate;
-  background: linear-gradient(200deg, rgba(128, 174, 232, 0.1) 0%, rgba(46, 132, 113, 0.2) 8%, rgba(12, 122, 96, 0.4) 16%, rgba(42, 249, 6, 0.7) 25%, rgba(226, 61, 80, 0.4) 34%, rgba(156, 248, 130, 0.2) 42%, rgba(196, 141, 159, 0.1) 50%);
+  width: 776px;
+  height: 682px;
+  clip-path: polygon(48% 100%, 66% 38%, 80% 20%);
+  -webkit-animation: sapphireBlue 5391ms -9819ms ease-in-out infinite alternate;
+          animation: sapphireBlue 5391ms -9819ms ease-in-out infinite alternate;
+  background: linear-gradient(130deg, rgba(55, 59, 236, 0.1) 0%, rgba(184, 164, 194, 0.2) 8%, rgba(116, 1, 118, 0.4) 16%, rgba(208, 103, 113, 0.7) 25%, rgba(26, 194, 183, 0.4) 34%, rgba(62, 153, 238, 0.2) 42%, rgba(200, 59, 2, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(98) {
-  width: 862px;
-  height: 727px;
-  clip-path: polygon(3% 79%, 81% 57%, 38% 47%);
-  -webkit-animation: sapphireBlue 2321ms -6101ms ease-in-out infinite alternate;
-          animation: sapphireBlue 2321ms -6101ms ease-in-out infinite alternate;
-  background: linear-gradient(251deg, rgba(199, 45, 139, 0.1) 0%, rgba(161, 2, 202, 0.2) 8%, rgba(66, 33, 100, 0.4) 16%, rgba(202, 37, 51, 0.7) 25%, rgba(214, 241, 116, 0.4) 34%, rgba(190, 174, 206, 0.2) 42%, rgba(186, 218, 110, 0.1) 50%);
+  width: 692px;
+  height: 711px;
+  clip-path: polygon(28% 45%, 73% 77%, 57% 37%);
+  -webkit-animation: sapphireBlue 5127ms -1338ms ease-in-out infinite alternate;
+          animation: sapphireBlue 5127ms -1338ms ease-in-out infinite alternate;
+  background: linear-gradient(290deg, rgba(225, 124, 69, 0.1) 0%, rgba(39, 79, 140, 0.2) 8%, rgba(116, 134, 171, 0.4) 16%, rgba(25, 203, 114, 0.7) 25%, rgba(154, 10, 6, 0.4) 34%, rgba(147, 130, 164, 0.2) 42%, rgba(153, 35, 45, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(99) {
-  width: 740px;
-  height: 838px;
-  clip-path: polygon(45% 27%, 6% 40%, 33% 61%);
-  -webkit-animation: sapphireBlue 5731ms -805ms ease-in-out infinite alternate;
-          animation: sapphireBlue 5731ms -805ms ease-in-out infinite alternate;
-  background: linear-gradient(236deg, rgba(109, 180, 216, 0.1) 0%, rgba(255, 70, 210, 0.2) 8%, rgba(172, 38, 248, 0.4) 16%, rgba(147, 247, 195, 0.7) 25%, rgba(141, 53, 130, 0.4) 34%, rgba(116, 227, 251, 0.2) 42%, rgba(46, 106, 74, 0.1) 50%);
+  width: 638px;
+  height: 802px;
+  clip-path: polygon(73% 35%, 91% 50%, 88% 53%);
+  -webkit-animation: sapphireBlue 2292ms -5062ms ease-in-out infinite alternate;
+          animation: sapphireBlue 2292ms -5062ms ease-in-out infinite alternate;
+  background: linear-gradient(246deg, rgba(101, 223, 172, 0.1) 0%, rgba(83, 241, 92, 0.2) 8%, rgba(244, 153, 245, 0.4) 16%, rgba(178, 206, 151, 0.7) 25%, rgba(59, 112, 118, 0.4) 34%, rgba(46, 182, 163, 0.2) 42%, rgba(126, 144, 141, 0.1) 50%);
   background-size: 100% 200%;
 }
 #pageEffect5 #sapphire .cut:nth-child(100) {
-  width: 596px;
-  height: 690px;
-  clip-path: polygon(51% 28%, 31% 10%, 55% 52%);
-  -webkit-animation: sapphireBlue 3472ms -4393ms ease-in-out infinite alternate;
-          animation: sapphireBlue 3472ms -4393ms ease-in-out infinite alternate;
-  background: linear-gradient(338deg, rgba(201, 62, 153, 0.1) 0%, rgba(62, 107, 214, 0.2) 8%, rgba(151, 111, 186, 0.4) 16%, rgba(177, 5, 106, 0.7) 25%, rgba(86, 172, 132, 0.4) 34%, rgba(215, 170, 138, 0.2) 42%, rgba(140, 62, 101, 0.1) 50%);
+  width: 410px;
+  height: 968px;
+  clip-path: polygon(60% 60%, 41% 55%, 44% 77%);
+  -webkit-animation: sapphireBlue 5457ms -6079ms ease-in-out infinite alternate;
+          animation: sapphireBlue 5457ms -6079ms ease-in-out infinite alternate;
+  background: linear-gradient(2deg, rgba(143, 112, 94, 0.1) 0%, rgba(144, 148, 203, 0.2) 8%, rgba(132, 53, 54, 0.4) 16%, rgba(173, 111, 176, 0.7) 25%, rgba(81, 225, 157, 0.4) 34%, rgba(28, 4, 202, 0.2) 42%, rgba(158, 91, 158, 0.1) 50%);
   background-size: 100% 200%;
 }
 @-webkit-keyframes sapphireBlue {

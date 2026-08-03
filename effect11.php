@@ -89,6 +89,7 @@ include(dirname(__FILE__) . '/inc/head.php');
             </div>
         </section>
     </main>
+<?php include(dirname(__FILE__) . '/inc/footer.php'); ?>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="<?php echo h($path_js) ?>/effect11.js"></script>

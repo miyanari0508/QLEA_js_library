@@ -53,5 +53,6 @@ include(dirname(__FILE__) . '/inc/head.php');
   <div class="cut"></div>
   <div class="cut"></div>
 </div>
+<?php include(dirname(__FILE__) . '/inc/footer.php'); ?>
 </body>
 </html>

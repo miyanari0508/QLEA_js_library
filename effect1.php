@@ -17,6 +17,7 @@ include(dirname(__FILE__) . '/inc/head.php');
       <div class="js_sunbeem" id="" data-src="<?php echo h($path_img) ?>/img3.jpg"></div>
     </section>
   </main>
+<?php include(dirname(__FILE__) . '/inc/footer.php'); ?>
 </body>
 <script src="<?php echo h($path_lib) ?>/kgl.js"></script>
 <script src="<?php echo h($path_js) ?>/sunbeem.js"></script>

@@ -1,0 +1,18 @@
+@use "../global" as *;
+footer{
+  .link_wrap{
+    .top_button{
+      position: fixed;
+      bottom: 1rem;
+      right: 1rem;
+      background-color: #000;
+      color: #fff;
+      @include flex_c_c;
+      width: 8rem;
+      height: 8rem;
+      border-radius: 4rem;
+      text-align: center;
+      z-index: 999;
+    }    
+  }
+}

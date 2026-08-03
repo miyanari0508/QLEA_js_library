@@ -20,6 +20,7 @@ include(dirname(__FILE__) . '/inc/head.php');
       </div>
     </section>
   </main>
+<?php include(dirname(__FILE__) . '/inc/footer.php'); ?>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="<?php echo h($path_lib) ?>/pixi.js"></script>
