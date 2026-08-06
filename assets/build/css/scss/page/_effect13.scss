@@ -1,0 +1,169 @@
+@use "../global" as *;
+
+#pageEffect13 {
+	main {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 40px 0;
+        margin: 0;
+        height: 100vh;
+	}
+
+	#container {
+		position: fixed;
+		inset: 0;
+		z-index: 2;
+		pointer-events: none;
+
+		canvas {
+			display: block;
+		}
+	}
+
+	.effect13 {
+		position: relative;
+		width: 100%;
+		margin: 0 auto;
+		opacity: 0;
+		transition: opacity 0.6s ease;
+
+		&.is-loaded {
+			opacity: 1;
+		}
+
+        &_stage {
+	    	position: relative;
+	    	height: 100vh;
+	    	background: #ffffff;
+	    }
+    
+	    &_slide {
+	    	position: absolute;
+	    	inset: 0;
+        }
+    
+	    &_box {
+	    	position: relative; 
+            width: 100%;
+            height: 100%;
+	    }
+    
+	    &_txtBox {
+            position: absolute;
+            top: 37%;
+            left: 20%;
+            z-index: 3;
+            width: 57rem;
+            max-width: 80%;
+            opacity: 0;
+            transform-origin: 50% 50%;
+            transform: translateY(-50%, -50%);           
+            will-change: opacity, transform;
+			pointer-events: none;
+			color: #000;
+
+			&.txt-w {
+				color: #fff;
+			}
+	    }
+    
+	    &_ttl {
+	    	font-weight: 500;
+	    	font-size: 4.2rem;
+	    	letter-spacing: 0;
+            font-family: "Cormorant Garamond", serif;
+
+            .num {
+                font-family: "Shippori Mincho B1", serif;
+                font-size: 3.8rem;
+            }
+	    }
+    
+	    &_txt {
+            font-size: 2.2rem;
+            letter-spacing: 0.1em;
+            line-height: 1.1;
+            margin-top: 4.6rem;
+	    }
+    
+	    &_imgBox {
+            position: absolute;
+            width: 100%;
+            height: 100%;          
+
+            .js-image {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                opacity: 0;      
+            }
+        }
+    
+	    &_nav {
+	    	position: absolute;
+	    	top: 50%;
+	    	z-index: 3;
+	    	width: 8rem;
+	    	height: 16rem;
+	    	border: 0;
+	    	padding: 0;
+	    	background-color: rgba($color: #000000, $alpha: .8);
+	    	color: #ffffff;
+	    	cursor: pointer;
+	    	display: flex;
+	    	align-items: center;
+	    	justify-content: center;
+	    	transition: opacity 0.3s ease, background-color 0.2s ease, transform 0.2s ease;
+    
+	    	.icon {
+	    		width: 3.6rem;
+	    		height: 1.6rem;
+	    	}
+    
+	    	&:hover {
+	    		background: #000;
+	    	}
+    
+	    	&:focus-visible {
+	    		outline: 2px solid #000;
+	    		outline-offset: 3px;
+	    	}
+    
+	    	&.is-hidden {
+	    		opacity: 0;
+	    		pointer-events: none;
+	    	}
+
+            &--prev {
+	        	left: 8rem;
+	        	transform: translate(-100%, -50%) rotate(180deg);
+	        	border-radius: 100px 0 0 100px;  
+
+                .icon {
+                    transform: rotate(180deg) translateX(-0.6rem);
+                }
+	        }
+        
+	        &--next {
+	        	right: 8rem;
+	        	transform: translate(100%, -50%) rotate(180deg);
+	        	border-radius: 0 100px 100px 0;   
+
+                .icon {
+                    transform: translateX(-0.6rem);
+                }
+	        }
+	    }
+
+    
+	    @media (max-width: 750px) {
+            &_txtBox {
+                width: 100%;
+				left: 10%;
+				top: 20%;
+            }
+	    }
+	}
+}
