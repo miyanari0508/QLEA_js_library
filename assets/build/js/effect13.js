@@ -36,7 +36,7 @@
     '  float pi = 3.14159265359;',
     '  float finalAngle = angle;',
     '  vec3 newposition = position;',
-    '  float rad = 0.1;',
+    '  float rad = 0.06;',
     '  float rolls = 8.0;',
     '',
     '  newposition = rotate(newposition - vec3(-0.5,0.5,0.0), vec3(0.0,0.0,1.0), -finalAngle) + vec3(-0.5,0.5,0.0);',

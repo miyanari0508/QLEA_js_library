@@ -1,0 +1,210 @@
+@charset "UTF-8";
+@use "setting" as inc_set;
+
+/* ==========================================================================
+   アニメーション共通設定
+   ========================================================================== */
+[class*="anime"] {
+	&.scrollin {
+		// 全アニメーション共通の表示状態
+		opacity: 1;
+		filter: blur(0);
+		transform: translate(0, 0);
+
+		img {
+			scale: 1;
+		}
+	}
+}
+
+/* -----------------------------------------------------------
+	ぼかしフェード
+   ----------------------------------------------------------- */
+
+// 基本スタイル
+[class*="anime_blur_"] {
+	opacity: 0;
+	filter: blur(100px);
+	transition: opacity 1s, filter 1s;
+}
+
+// 個別ディレイの自動生成 (0.3sずつ加算)
+@for $i from 2 through 10 {
+	.anime_blur_#{$i} {
+		$delay: (
+			$i - 1) * 0.3s;
+
+		// 特定の番号だけ例外処理する場
+		// （例：anime_blur_2だけdelayをずらす）
+		// @if $i ==2 {
+		//
+		// $delay: 5s;
+		//
+		// }
+
+		transition-delay: $delay;
+	}
+}
+
+/* -----------------------------------------------------------
+	下からふわっと表示
+   ----------------------------------------------------------- */
+// 基本スタイル
+[class*="anime_fadeUp_"] {
+	opacity: 0;
+	transform: translateY(30px
+	);
+transition: all .7s;
+}
+
+// 個別ディレイの自動生成 (0.3sずつ加算)
+@for $i from 2 through 10 {
+	.anime_fadeUp_#{$i} {
+		$delay: (
+			$i - 1) * 0.3s;
+		transition-delay: $delay;
+	}
+}
+
+/* -----------------------------------------------------------
+	左からふわっと表示
+   ----------------------------------------------------------- */
+// 基本スタイル
+[class*="anime_fadeLeft_"] {
+	opacity: 0;
+	transform: translateX(-30px
+	);
+transition: all .7s;
+}
+
+// 個別ディレイの自動生成 (0.3sずつ加算)
+@for $i from 2 through 10 {
+	.anime_fadeLeft_#{$i} {
+		$delay: (
+			$i - 1) * 0.3s;
+		transition-delay: $delay;
+	}
+}
+
+/* -----------------------------------------------------------
+	右からふわっと表示
+   ----------------------------------------------------------- */
+// 基本スタイル
+[class*="anime_fadeRight_"] {
+	opacity: 0;
+	transform: translateX(30px
+	);
+transition: all .7s;
+}
+
+// 個別ディレイの自動生成 (0.3sずつ加算)
+@for $i from 2 through 10 {
+	.anime_fadeRight_#{$i} {
+		$delay: (
+			$i - 1) * 0.3s;
+		transition-delay: $delay;
+	}
+}
+
+/* -----------------------------------------------------------
+	透明度変更
+   ----------------------------------------------------------- */
+[class*="anime_fade_"] {
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+
+@for $i from 1 through 10 {
+	.anime_fade_#{$i} {
+		$delay: (
+			$i - 1) * 0.3s;
+
+		transition-delay: $delay;
+	}
+}
+
+/* -----------------------------------------------------------
+	画像表示（scale:1.1 → 1）
+   ----------------------------------------------------------- */
+[class*="anime_imgScale_"] {
+	overflow: hidden;
+	opacity: 0;
+	transition: 1s;
+
+	img {
+		scale: 1.1;
+		transition: 1.5s;
+	}
+}
+
+@for $i from 1 through 10 {
+	.anime_imgScale_#{$i} {
+		$delay: (
+			$i - 1) * 0.3s;
+
+		transition-delay: $delay;
+	}
+}
+
+
+/* -----------------------------------------------------------
+	クリップアニメーション(左から)
+   ----------------------------------------------------------- */
+[class*="anime_imgClipLeft_"] {
+
+	img {
+		width: 100%;
+		height: auto;
+		display: block;
+		clip-path: inset(0 100% 0 0
+		);
+	transition: clip-path 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+&.scrollin {
+	img {
+		clip-path: inset(0 0 0 0);
+	}
+}
+
+}
+
+@for $i from 1 through 10 {
+	.anime_imgClipLeft_#{$i} {
+		$delay: (
+			$i - 1) * 0.3s;
+
+		transition-delay: $delay;
+	}
+}
+
+/* -----------------------------------------------------------
+	クリップアニメーション(右から)
+   ----------------------------------------------------------- */
+[class*="anime_imgClipRight_"] {
+
+	img {
+		width: 100%;
+		height: auto;
+		display: block;
+		clip-path: inset(0 0 0 100%
+		);
+	transition: clip-path 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+&.scrollin {
+	img {
+		clip-path: inset(0 0 0 0);
+	}
+}
+
+}
+
+@for $i from 1 through 10 {
+	.anime_imgClipLeft_#{$i} {
+		$delay: (
+			$i - 1) * 0.3s;
+
+		transition-delay: $delay;
+	}
+}

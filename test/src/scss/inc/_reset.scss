@@ -1,0 +1,188 @@
+@charset "UTF-8";
+@use "setting" as inc_set;
+
+/* ==========================================================================
+   Modern Reset CSS
+   ========================================================================== */
+
+// 1. 全要素のボックスモデルを border-box に統一（paddingを含めた幅計算にする）
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+// 2. 基本タグの余白・枠線をリセット
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+// 3. HTML5要素のブロック化
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+// 4. ベース設定
+html {
+	font-size: 62.5%; // 1rem = 10px
+	overflow-y: scroll; // スクロールバーによるガタつき防止
+	-webkit-text-size-adjust: 100%; // スマホ横向き時の文字サイズ自動変化を防止
+}
+
+body {
+	line-height: 1.5;
+	font-size: 1.6rem;
+	color: #333;
+	width: 100%;
+	overflow-x: hidden;
+	-webkit-font-smoothing: antialiased; // フォントを綺麗に表示
+
+	&:has(dialog[open]) {
+		/* ダイアログ表示時の背景スクロール停止 */
+		overflow: hidden;
+	}
+}
+
+// 5. リスト・テーブル設定
+ol,
+ul {
+	list-style: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+// 6. リンク・画像設定
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+img {
+	// width: 100%;
+	// height: auto;
+	// vertical-align: bottom;
+}
+
+// 7. ユーティリティ（表示切り替え）
+._sp {
+	display: none;
+}
+
+._pc {
+	display: block;
+}
+
+@media screen and (max-width: inc_set.$media_sp) {
+	._sp {
+		display: block;
+	}
+
+	._pc {
+		display: none;
+	}
+}
+
+// 8. その他
+.bunjyo-main, .html4-main {
+	overflow: hidden;
+
+	p {
+		line-height: 1.5;
+		letter-spacing: .05em;
+	}
+}

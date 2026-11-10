@@ -1,0 +1,181 @@
+@charset "UTF-8";
+@use "setting" as inc_set;
+@use "reset" as inc_re;
+
+/* ==========================================================================
+   Mixins (定義エリア)
+   ========================================================================== */
+
+// 1. レスポンシブ・フォントサイズ
+// $pc: 最大サイズ, $sp_vw: SP時の推奨vw, $min: 最小サイズ
+@mixin mix_fz($pc_px, $min_px: 10, $sp_vw: 4vw) {
+	font-size: calc($min_px / 10) * 1rem; // フォールバック（古いブラウザ用）
+	font-size: clamp(#{calc($min_px / 10)}rem,
+		$sp_vw,
+		#{calc($pc_px / 10)}rem);
+}
+
+// 2. フレックスボックス一括
+@mixin mix_flex($js: space-between, $ai: center, $wrap: wrap) {
+	display: flex;
+	justify-content: $js;
+	align-items: $ai;
+	flex-wrap: $wrap;
+}
+
+// 3. 幅制限
+@mixin mix_w($max: 1400px, $w: 90%) {
+	width: $w;
+	max-width: $max;
+	margin: 0 auto;
+}
+
+// 4.画像注釈
+@mixin mix_imgNote($inset: auto 5px 5px auto) {
+	position: absolute;
+	font-size: 1rem;
+	inset: $inset;
+}
+
+// 6. 真ん中寄せ
+@mixin mix_center($inset: 0) {
+	position: absolute;
+	inset: $inset;
+	margin: auto;
+}
+
+// 6. フォント呼び出し
+@mixin mix_gm($weight: 400) {
+	font-family: "EB Garamond", serif;
+	font-optical-sizing: auto;
+	font-weight: $weight;
+	font-style: normal;
+}
+
+@mixin mix_ns($weight: 400) {
+	font-family: "Noto Sans JP", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: $weight;
+	font-style: normal;
+}
+
+@mixin mix_sm($weight: 400) {
+	font-family: "Shippori Mincho", serif;
+	font-weight: $weight;
+	font-style: normal;
+}
+
+
+/* ==========================================================================
+   Common Classes (適用エリア)
+   ========================================================================== */
+
+.com {
+	&_col_wh {
+		color: #fff;
+		text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+	}
+
+	&_col_blk {
+		color: #000000;
+	}
+
+	&_center {
+		@include mix_center()
+	}
+
+	// 画像注釈
+	&_imgBox {
+		position: relative;
+
+		.com {
+			&_imgNote {
+				@include mix_imgNote();
+			}
+
+			// 左寄せ
+			&_imgNote_l {
+				@include mix_imgNote($inset: auto auto 5px 5px);
+			}
+
+			// 画像下
+			&_imgNote_b {
+				@include mix_imgNote($inset: calc(100% + 5px) 5px auto auto);
+			}
+		}
+	}
+
+	// タイポグラフィ
+	&_text {
+		@include mix_fz(16, 14, 3.5vw);
+	}
+
+	&_note {
+		font-size: 1rem;
+	}
+
+	// 幅・レイアウト
+	&_w800 {
+		@include mix_w(800px);
+	}
+
+	&_w1000 {
+		@include mix_w(1000px);
+	}
+
+	&_w1400 {
+		@include mix_w();
+	}
+
+	&_flbox {
+		@include mix_flex();
+	}
+
+	// 注釈エリア
+	&_notebox {
+		@include mix_w(1000px, 90%);
+		padding-bottom: clamp(20px, 6vw, 50px);
+	}
+
+	&_note_list {}
+
+	&_note_item {
+		font-size: 1rem;
+		padding-left: 1em;
+		text-indent: -1em;
+		position: relative;
+
+		&::before {
+			content: '※';
+		}
+	}
+
+	// &_modal {
+	// 	border: none;
+	// 	padding: 0;
+	// 	background: transparent;
+	// 	max-width: none;
+	// 	max-height: none;
+	// 	overflow: visible;
+
+	// 	&::backdrop {
+	// 		background: rgba(0, 0, 0, 0.6);
+	// 	}
+
+	// 	.com_modal_inner {
+	// 		width: min(600px, calc(100vw - 40px));
+	// 		background: #fff;
+	// 		position: relative;
+	// 	}
+
+	// 	.com_modal_close {
+	// 		position: absolute;
+	// 		bottom: 100%;
+	// 		right: 0;
+	// 		width: 5%;
+	// 		aspect-ratio: 1/1;
+	// 		background: transparent url("") left top / cover no-repeat;
+	// 	}
+	// }
+
+}

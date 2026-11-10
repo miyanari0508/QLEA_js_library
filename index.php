@@ -37,6 +37,16 @@ include(dirname(__FILE__) . '/inc/head.php');
                 画像表示
               </a>
             </li>
+            <li>
+              <a href="<?php echo h($path) ?>/effect12.php">
+                本パラパラ.1（部分的）
+              </a>
+            </li>
+            <li>
+              <a href="<?php echo h($path) ?>/effect13.php">
+                本パラパラ.1（全体）
+              </a>
+            </li>
           </ul>
         </div>
 
