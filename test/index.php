@@ -144,8 +144,11 @@ include(dirname(__FILE__) . '/assets/inc/header.php');
 
   <div class="bunjyo_movie_wrap">
     <h2 class="bunjyo_movie_ttl">≪CONCEPT MOVIE≫</h2>
-    <div class="bunjyo_movie_inner">
-      <iframe src="https://ovp-player.smartstream.ne.jp/eproweb/output/player/5164abdeccce405bb2cfad6012160136/index.html?mp=db5ec474cad8451fac49fbdc6a2173e0&amp;ts=1574839393" width="960" height="540" frameborder="0" allowfullscreen="allowfullscreen" scrolling="no" title="ヘーベルハウスの分譲戸建・分譲宅地 紹介映像"></iframe>
+    <div class="bunjyo_movie_inner js-movie">
+      <div class="bunjyo_movie_thumb">
+        <img class="bunjyo_movie_img--pc" src="<?php echo h($path_img); ?>bunjyo-project/movie_thumbnail.webp" width="1920" height="1080" alt="">
+        <img class="bunjyo_movie_img--sp" src="<?php echo h($path_img); ?>bunjyo-project/movie_thumbnail_sp.webp" width="1500" height="2000" alt="">
+      </div>
     </div>
   </div>
 
@@ -846,7 +849,7 @@ include(dirname(__FILE__) . '/assets/inc/header.php');
   </div>
 </div>
 
-
+ <script type="text/javascript" src="https://ovp-player.smartstream.ne.jp/eproweb/output/player/5164abdeccce405bb2cfad6012160136/streaks-player.min.js?ts=1574839393"></script>
 <?php include(dirname(__FILE__) . '/assets/inc/footer.php'); ?>
 </body>
 

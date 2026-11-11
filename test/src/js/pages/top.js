@@ -108,3 +108,34 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+// CONCEPT MOVIE
+document.addEventListener('DOMContentLoaded', () => {
+    const MP_PC = 'db5ec474cad8451fac49fbdc6a2173e0'; 
+    const MP_SP = '724da54c0018424da382fde834158ac2'; 
+    const mq = window.matchMedia('(max-width: 767px)'); 
+
+    const box = document.querySelector('.js-movie');
+    if (!box || !window.streaksplayer) return;
+    const getMp = () => (mq.matches ? MP_SP : MP_PC);
+
+    const video = document.createElement('video');
+    video.id = 'bunjyo_concept_movie';
+    video.className = 'bunjyo_movie_player logica-player lgcp-default-skins';
+    video.setAttribute('data-media-player-id', getMp());
+    box.appendChild(video);
+    const player = window.streaksplayer(video.id, { playsinline: true });
+
+    const overlay = player.el().querySelector('.lgcp-cued-thumbnail-overlay-image');
+    if (overlay) overlay.insertBefore(box.querySelector('.bunjyo_movie_thumb'), overlay.firstChild);
+
+    const load = () => {
+        player.pause();
+        player.hasStarted(false);
+        player.loadVideo({ mediaPlayerId: getMp() }, (err) => { if (!err) player.poster(''); });
+    };
+
+    load();
+    mq.addListener(load); 
+});
+
